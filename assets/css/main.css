@@ -50,7 +50,7 @@ li > .active {
 }
 
 .lucida-console {
-	font-family: 'Lucida Console', monospace;
+	font-family: 'Anonymous Pro', monospace;
 }
 
 /* NICOLAS MESEGUER CONTACT INFO - Related*/
@@ -78,7 +78,7 @@ li > .active {
 }
 
 .pub-year-h2 {
-	font-size: 3.2em;
+	font-size: 2.8em;
 	font-weight: 100;
 }
 
@@ -87,7 +87,7 @@ li > .active {
 }
 
 .pub-authors .pub-author {
-	font-weight: 500;
+	font-weight: 600;
 }
 
 .pub-congress {
@@ -99,6 +99,11 @@ li > .active {
 }
 
 /* ACADEMIC - Related */
+.mentorship {
+	font-size: 2.1em;
+	font-weight: 400;
+}
+
 .academic-year-h2, .student-h2 {
 	font-size: 3.2em;
 	font-weight: 100;
