@@ -27,7 +27,7 @@
       "Explored minimal Recurrent Neural Networks (minLSTMs and minGRUs), which significantly improve sequence modeling performance and efficiency by leveraging fewer parameters.",
       "Developed Bidirectional Minimal GRU (BiMinGRU) to effectively incorporate past and future context in the sequence model, removing the reliance on causal convolutions for multi-level architectural designs.",
       "Implemented a self-supervised Expectation-Maximisation (EM) based learning approach to enhance fundamental frequency (F0) and voicing estimation, capitalizing on the co-dependent relationship between existence of fundamental frequency and voicing to filter unvoiced frames and preventing bad gradient updates.",
-      "Engineered a highly parameter-efficient frame-level F0 and voicing extraction model with only ≈75K parameters using Constant Q-Transform (CQT) features, prioritizing lightweight and efficient processing for deployment.",
+      "Engineered a highly parameter-efficient frame-level F0 and voicing extraction model with only ≈9K parameters using Constant Q-Transform (CQT) features, prioritizing lightweight and efficient processing for deployment.",
       "Demonstrated a novel fully end-to-end trainable DDSP-based music synthesis and timbre transfer system that accepts any reference monophonic audio, eliminating dependence on external F0 or loudness models allowing for highly specialized models for end-user use cases."
     ]
   },

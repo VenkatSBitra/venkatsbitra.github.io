@@ -8,15 +8,17 @@
   "github": "https://github.com/VenkatSBitra",
   "siteUrl": "https://venkatsbitra.github.io",
   "bio": [
-    "I'm a first-year PhD student in Electrical Engineering at Columbia University, where my work spans audio machine learning, mechanistic interpretability, and embedded computer vision. As a Research Assistant, I'm developing lightweight neural architectures for real-time pitch and voicing estimation and exploring physics-informed neural networks for rule-constrained music generation.",
-    "I completed my Master's in Computer Science at Columbia in December 2025, with a thesis on a VAE-based audio encoder paired with a Mamba-enhanced DDSP decoder for music synthesis and timbre transfer. Before Columbia, I completed an Integrated M.Tech in Computer Science at IIIT Bangalore, where my research ranged from moving object segmentation for SLAM to GAN-based 3D face editing and TinyML deployment of spectral analysis models. I've also spent time as a research intern at Adobe Research and the University of British Columbia, and published across venues in signal processing, computer vision, and computational biology."
+    "I'm a first-year PhD student in Electrical Engineering at Columbia University. My research centers on signal processing and machine learning, with a particular focus on speech and audio — building models that exploit the structure of audio and spectral signals rather than treating them as generic sequence data. As a Research Assistant, I'm currently developing a Frequency Convolution Network that uses dilated convolutions over the log-frequency axis of a Variable-Q Transform frontend for real-time pitch and voicing estimation in just 17.8K parameters, reaching 98.8% RPA50 on MDB-stem-synth, 93.1% on PTDB-TUG, and 97.5% on MIR-1K, alongside spectral-domain augmentation strategies for noise and pitch invariance.",
+    "My Master's thesis (completed December 2025) explored how classical digital signal processing and modern deep learning can inform each other for audio synthesis. I built a Variational Autoencoder audio encoder paired with a Mamba-enhanced Differentiable DSP decoder for waveform-level music synthesis and timbre transfer, and designed a self-supervised, EM-based approach to fundamental frequency and voicing estimation that exploits the co-dependence between the two to avoid bad gradient updates on unvoiced frames. The resulting CQT-based pitch/voicing model runs in about 9K parameters, and the full synthesis pipeline is end-to-end trainable from any reference monophonic audio, with no dependence on external F0 or loudness estimators.",
+    "This interest in extracting structure from signals predates my time at Columbia — as a research intern at RRCAT, I applied object detection and lightweight CNNs to Raman spectra for pesticide and material identification, including field-deployable TinyML deployments on microcontroller hardware. Alongside this signal processing focus, I've also worked in computer vision (moving-object segmentation for SLAM, GAN-based 3D face editing) and computational biology (multi-omics disease-gene network construction), which continue to inform how I think about representation learning more broadly."
   ],
   "researchInterests": [
+    "Signal Processing",
     "Audio & Music ML",
+    "Generative Models",
+    "Embedded ML / TinyML",
     "Mechanistic Interpretability",
     "Computer Vision",
-    "Embedded ML / TinyML",
-    "Generative Models",
     "Computational Biology"
   ]
 }
