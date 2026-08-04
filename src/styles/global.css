@@ -322,6 +322,9 @@ details.entry[open] .entry-chevron {
 #skills .chip,
 #coursework .chip {
   border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-weight: 500;
 }
 
 /* ---------- Badge (awards) ---------- */

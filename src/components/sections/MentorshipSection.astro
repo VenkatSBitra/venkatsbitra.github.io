@@ -4,23 +4,33 @@ import SectionHeading from "../SectionHeading.astro";
 import { formatDateRange, sortByStartDateDesc } from "../../lib/dates";
 
 const entries = sortByStartDateDesc((await getCollection("mentorship")).map((e) => e.data));
+
+const groups = [
+  { label: "Columbia University", entries: entries.filter((e) => e.institution.includes("Columbia")) },
+  { label: "IIIT Bangalore", entries: entries.filter((e) => e.institution.includes("IIIT")) },
+];
 ---
 
 <section id="mentorship">
   <SectionHeading title="Mentorship" />
-  <div class="flat-list">
+  <div class="tag-groups">
     {
-      entries.map((entry) => (
-        <div class="flat-row">
-          <div class="flat-row-heading">
-            <span>
-              {entry.course}
-              {entry.courseCode ? ` (${entry.courseCode})` : ""}
-            </span>
-            <span class="entry-date">{formatDateRange(entry.startDate, entry.endDate)}</span>
-          </div>
-          <div class="flat-row-sub">
-            {entry.role} · {entry.institution}
+      groups.map((group) => (
+        <div class="tag-group">
+          <h3>{group.label}</h3>
+          <div class="flat-list">
+            {group.entries.map((entry) => (
+              <div class="flat-row">
+                <div class="flat-row-heading">
+                  <span>
+                    {entry.course}
+                    {entry.courseCode ? ` (${entry.courseCode})` : ""}
+                  </span>
+                  <span class="entry-date">{formatDateRange(entry.startDate, entry.endDate)}</span>
+                </div>
+                <div class="flat-row-sub">{entry.role}</div>
+              </div>
+            ))}
           </div>
         </div>
       ))
