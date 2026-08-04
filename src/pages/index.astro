@@ -3,6 +3,7 @@ import BaseLayout from "../layouts/BaseLayout.astro";
 import TopNav from "../components/TopNav.astro";
 import ProfileCard from "../components/ProfileCard.astro";
 import Footer from "../components/Footer.astro";
+import AboutSection from "../components/sections/AboutSection.astro";
 import EducationSection from "../components/sections/EducationSection.astro";
 import ExperienceSection from "../components/sections/ExperienceSection.astro";
 import ProjectsSection from "../components/sections/ProjectsSection.astro";
@@ -15,20 +16,25 @@ import CertificationsSection from "../components/sections/CertificationsSection.
 ---
 
 <BaseLayout>
-  <TopNav />
   <div class="layout">
     <ProfileCard />
-    <div class="main-content">
-      <EducationSection />
-      <ExperienceSection />
-      <ProjectsSection />
-      <PublicationsSection />
-      <MentorshipSection />
-      <SkillsSection />
-      <CourseworkSection />
-      <AchievementsSection />
-      <CertificationsSection />
-      <Footer />
+    <div class="content-column">
+      <TopNav />
+      <div class="main-content">
+        <AboutSection />
+        <div class="rest-sections" id="rest-sections">
+          <EducationSection />
+          <ExperienceSection />
+          <ProjectsSection />
+          <PublicationsSection />
+          <MentorshipSection />
+          <SkillsSection />
+          <CourseworkSection />
+          <AchievementsSection />
+          <CertificationsSection />
+        </div>
+        <Footer />
+      </div>
     </div>
   </div>
 </BaseLayout>

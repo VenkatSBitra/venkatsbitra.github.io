@@ -122,15 +122,30 @@ button {
   padding: var(--space-6) var(--space-5);
 }
 
+.content-column {
+  min-width: 0;
+}
+
 .main-content {
   display: flex;
   flex-direction: column;
   gap: var(--space-8);
   min-width: 0;
+  padding-top: var(--space-6);
 }
 
-.main-content > section {
+.main-content section {
   scroll-margin-top: calc(var(--nav-height) + var(--space-4));
+}
+
+.rest-sections {
+  display: none;
+}
+
+html[data-reveal-sections="true"] .rest-sections {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
 }
 
 @media (max-width: 860px) {
@@ -312,6 +327,17 @@ details.entry[open] .entry-chevron {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--color-accent);
+}
+
+/* ---------- About ---------- */
+.about-bio {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-size: 0.98rem;
+  line-height: 1.6;
+  margin-bottom: var(--space-5);
+  max-width: 68ch;
 }
 
 /* ---------- Tag groups (Skills / Coursework) ---------- */

@@ -6,5 +6,17 @@
   "phone": "+1 (646) 537 0987",
   "linkedin": "https://linkedin.com/in/venkat-suprabath/",
   "github": "https://github.com/VenkatSBitra",
-  "siteUrl": "https://venkatsbitra.github.io"
+  "siteUrl": "https://venkatsbitra.github.io",
+  "bio": [
+    "I'm a Master's student in Computer Science at Columbia University, where my work spans audio machine learning, mechanistic interpretability, and embedded computer vision. My thesis develops a VAE-based audio encoder with a Mamba-enhanced DDSP decoder for music synthesis and timbre transfer, alongside lightweight, self-supervised methods for pitch and voicing estimation.",
+    "Before Columbia, I completed an Integrated M.Tech in Computer Science at IIIT Bangalore, where my research ranged from moving object segmentation for SLAM to GAN-based 3D face editing and TinyML deployment of spectral analysis models. I've also spent time as a research intern at Adobe Research and the University of British Columbia, and published across venues in signal processing, computer vision, and computational biology."
+  ],
+  "researchInterests": [
+    "Audio & Music ML",
+    "Mechanistic Interpretability",
+    "Computer Vision",
+    "Embedded ML / TinyML",
+    "Generative Models",
+    "Computational Biology"
+  ]
 }

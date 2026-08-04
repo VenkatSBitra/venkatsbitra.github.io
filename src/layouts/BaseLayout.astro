@@ -26,6 +26,11 @@ const { title = `${profile.name} — Portfolio`, description = profile.tagline }
         if (stored === "light" || stored === "dark") {
           document.documentElement.setAttribute("data-theme", stored);
         }
+
+        const hash = window.location.hash.slice(1);
+        if (hash && hash !== "about") {
+          document.documentElement.setAttribute("data-reveal-sections", "true");
+        }
       })();
     </script>
   </head>

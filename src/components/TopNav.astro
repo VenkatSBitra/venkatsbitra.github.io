@@ -1,5 +1,6 @@
 ---
 const links = [
+  { href: "#about", label: "About" },
   { href: "#education", label: "Education" },
   { href: "#experience", label: "Experience" },
   { href: "#projects", label: "Projects" },
@@ -35,11 +36,6 @@ const links = [
     z-index: 20;
     background: var(--color-bg);
     border-bottom: 1px solid var(--color-border);
-  }
-  .top-nav nav {
-    max-width: var(--max-width);
-    margin-inline: auto;
-    padding-inline: var(--space-5);
   }
   .top-nav ul {
     display: flex;
@@ -78,12 +74,15 @@ const links = [
 <script>
   const links = document.querySelectorAll("[data-nav-link]");
   const sections = Array.from(links)
-    .map((link) => document.getElementById(link.dataset.navLink))
+    .map((link) => {
+      const id = link.getAttribute("data-nav-link");
+      return id ? document.getElementById(id) : null;
+    })
     .filter((el) => Boolean(el));
 
   function setActive(id) {
     links.forEach((link) => {
-      link.classList.toggle("active", link.dataset.navLink === id);
+      link.classList.toggle("active", link.getAttribute("data-nav-link") === id);
     });
   }
 
@@ -98,4 +97,14 @@ const links = [
   );
 
   sections.forEach((section) => observer.observe(section));
+
+  // Reveal the rest of the resume once the user navigates to any
+  // section beyond "About" — a one-way switch, never re-hidden.
+  links.forEach((link) => {
+    link.addEventListener("click", () => {
+      if (link.getAttribute("data-nav-link") !== "about") {
+        document.documentElement.setAttribute("data-reveal-sections", "true");
+      }
+    });
+  });
 </script>

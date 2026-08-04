@@ -87,4 +87,5 @@ export interface ProfileData {
   github: string;
   siteUrl: string;
   bio?: string[];
+  researchInterests?: string[];
 }

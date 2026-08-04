@@ -1,0 +1,29 @@
+---
+import SectionHeading from "../SectionHeading.astro";
+import profile from "../../data/profile.json";
+---
+
+<section id="about">
+  <SectionHeading title="About Me" />
+  {
+    profile.bio && (
+      <div class="about-bio">
+        {profile.bio.map((paragraph) => (
+          <p>{paragraph}</p>
+        ))}
+      </div>
+    )
+  }
+  {
+    profile.researchInterests && profile.researchInterests.length > 0 && (
+      <div class="tag-group">
+        <h3>Research Interests</h3>
+        <div class="chip-group">
+          {profile.researchInterests.map((interest) => (
+            <span class="chip">{interest}</span>
+          ))}
+        </div>
+      </div>
+    )
+  }
+</section>
