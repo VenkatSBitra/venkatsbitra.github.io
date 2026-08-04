@@ -1,6 +1,6 @@
 {
   "name": "Venkat Suprabath Bitra",
-  "tagline": "MS in Computer Science, Columbia University",
+  "tagline": "PhD Student in Electrical Engineering, Columbia University",
   "location": "New York, NY",
   "email": "vsb2127@columbia.edu",
   "phone": "+1 (646) 537 0987",
@@ -8,8 +8,8 @@
   "github": "https://github.com/VenkatSBitra",
   "siteUrl": "https://venkatsbitra.github.io",
   "bio": [
-    "I'm a Master's student in Computer Science at Columbia University, where my work spans audio machine learning, mechanistic interpretability, and embedded computer vision. My thesis develops a VAE-based audio encoder with a Mamba-enhanced DDSP decoder for music synthesis and timbre transfer, alongside lightweight, self-supervised methods for pitch and voicing estimation.",
-    "Before Columbia, I completed an Integrated M.Tech in Computer Science at IIIT Bangalore, where my research ranged from moving object segmentation for SLAM to GAN-based 3D face editing and TinyML deployment of spectral analysis models. I've also spent time as a research intern at Adobe Research and the University of British Columbia, and published across venues in signal processing, computer vision, and computational biology."
+    "I'm a first-year PhD student in Electrical Engineering at Columbia University, where my work spans audio machine learning, mechanistic interpretability, and embedded computer vision. As a Research Assistant, I'm developing lightweight neural architectures for real-time pitch and voicing estimation and exploring physics-informed neural networks for rule-constrained music generation.",
+    "I completed my Master's in Computer Science at Columbia in December 2025, with a thesis on a VAE-based audio encoder paired with a Mamba-enhanced DDSP decoder for music synthesis and timbre transfer. Before Columbia, I completed an Integrated M.Tech in Computer Science at IIIT Bangalore, where my research ranged from moving object segmentation for SLAM to GAN-based 3D face editing and TinyML deployment of spectral analysis models. I've also spent time as a research intern at Adobe Research and the University of British Columbia, and published across venues in signal processing, computer vision, and computational biology."
   ],
   "researchInterests": [
     "Audio & Music ML",
