@@ -2,6 +2,13 @@
   {
     "institution": "Columbia University, USA",
     "location": "New York, NY",
+    "degree": "PhD in Electrical Engineering",
+    "startDate": "2026-09-01",
+    "endDate": null
+  },
+  {
+    "institution": "Columbia University, USA",
+    "location": "New York, NY",
     "degree": "MS in Computer Science",
     "gpa": "4.231",
     "startDate": "2024-09-01",

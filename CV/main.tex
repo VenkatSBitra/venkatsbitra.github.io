@@ -142,8 +142,9 @@
 \section{Education}
 
 \resumeSubHeadingListStart
+\resumeSubheading{Columbia University, USA}{Sep 2026 -- Present}{PhD in Electrical Engineering}{}
 \resumeSubheading{Columbia University, USA}{Sep 2024 -- Dec 2025}{MS in Computer Science}{GPA: 4.231}
-\resumeSubheading{IIIT Bangalore, India}{Aug 2019 -- Jul 2024}{Integrated 
+\resumeSubheading{IIIT Bangalore, India}{Aug 2019 -- Jul 2024}{Integrated
 M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.00}
 \resumeSubHeadingListEnd
 
@@ -153,15 +154,27 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 
 \resumeSubHeadingListStart
 \resumeSubheading
-{Columbia University}{Jan 2025 -- Present}
+{Columbia University}{Jan 2026 -- Aug 2026}
+{Research Assistant}{New York, NY}
+\resumeItemListStart
+\resumeItem{Designed a \textbf{Frequency Convolution Network (FCN)} using dilated 1D convolutions along the log-frequency axis of a \textbf{Variable-Q Transform (VQT)} frontend, achieving a large harmonic receptive field with only \textbf{17.8K parameters} for real-time monophonic pitch and voicing estimation.}
+\resumeItem{Developed \textbf{spectral-domain noise and frequency-scaling augmentation} strategies to induce noise invariance and pitch equivariance, evaluated on MDB-stem-synth, PTDB-TUG, and MIR-1K with CHiME-Home as a noise source.}
+\resumeItem{Achieved \textbf{98.8\% RPA50 on MDB-stem-synth, 93.1\% on PTDB-TUG, and 97.5\% on MIR-1K} in clean conditions while keeping RPA50 above \textbf{80\% at 0 dB SNR} across datasets, outperforming a matched-parameter CNN baseline and remaining competitive with substantially larger pitch-estimation models.}
+\resumeItem{Proposed \textbf{Counterpoint Informed Neural Networks (CINN)}, embedding Fux's species counterpoint rules as a differentiable, physics-informed penalty on a \textbf{MinGRU encoder-decoder} that generates a soprano accompaniment against a cantus firmus.}
+\resumeItem{Introduced a \textbf{joint pitch-attack coupling loss} (via Jensen-Shannon divergence between neighboring pitch distributions) and an attack-prediction head to keep rhythms and articulations plausible, preventing collapse into rests or rapid spurious attacks.}
+\resumeItem{Implemented a \textbf{joint beam search over pitch and attack} at inference to keep rhythm aligned with the cantus firmus, benchmarking against a MinGRU baseline and a Transformer variant on a held-out composer, \textbf{reducing rule-based violations} across harmonic, melodic, and rhythmic categories with minimal cross-entropy trade-off.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Columbia University}{Jan 2025 -- Dec 2025}
 {Master's Thesis Project}{New York, NY}
 \resumeItemListStart
-\resumeItem{Developed a novel \textbf{Variational Autoencoder (VAE)}-based Audio Encoder with a \textbf{Mamba-enhanced Differentiable Digital Signal Processing (DDSP) Decoder} for direct waveform analysis, enabling music synthesis and timbre transfer.}
+\resumeItem{Developed a \textbf{Variational Autoencoder (VAE)}-based Audio Encoder with a \textbf{Mamba-enhanced Differentiable Digital Signal Processing (DDSP) Decoder} for waveform analysis, enabling music synthesis and timbre transfer.}
 \resumeItem{Explored \textbf{minimal Recurrent Neural Networks (minLSTMs and minGRUs)}, which significantly improve sequence modeling performance and efficiency by leveraging fewer parameters.}
 \resumeItem{Developed \textbf{Bidirectional Minimal GRU (BiMinGRU)} to effectively incorporate past and future context in the sequence model, removing the reliance on causal convolutions for multi-level architectural designs.}
 \resumeItem{Implemented a \textbf{self-supervised Expectation-Maximisation (EM) based learning approach} to enhance fundamental frequency (F0) and voicing estimation, capitalizing on the co-dependent relationship between existence of fundamental frequency and voicing to filter unvoiced frames and preventing bad gradient updates.}
-\resumeItem{Engineered a highly parameter-efficient \textbf{frame-level F0 and voicing extraction model with only $\approx$75K parameters} using Constant Q-Transform (CQT) features, prioritizing lightweight and efficient processing for deployment.}
-\resumeItem{Demonstrated a novel \textbf{fully end-to-end trainable DDSP-based music synthesis and timbre transfer system} that accepts any reference monophonic audio, eliminating dependence on external F0 or loudness models allowing for highly specialized models for end-user use cases.}
+\resumeItem{Engineered a highly parameter-efficient \textbf{frame-level F0 and voicing extraction model with only $\approx$75K parameters} using Constant Q-Transform (CQT) features for lightweight deployment.}
+\resumeItem{Demonstrated a \textbf{fully end-to-end trainable DDSP-based music synthesis and timbre transfer system} that accepts any reference monophonic audio, removing dependence on external F0 or loudness models.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -171,7 +184,7 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItem{Investigated interpretability of LLMs (GPT-2, Gemma 2B Instruct) by analyzing hidden representations using \textbf{dictionary learning and sparse autoencoders} to uncover monosemantic features.}
 \resumeItem{Implemented \textbf{feature clamping approach} (by Anthropic) to steer model outputs toward specific features, improving controllability and interpretability.}
 \resumeItem{Applied \textbf{Sparse Autoencoders (SAEs) and BERTopic to 500 books across 20 genres}, extracting monosemantic features from dense embeddings at multiple granularities to map semantic structure in decoder-based LLMs.}
-\resumeItem{Uncovered unexpected cross-genre semantic relationships through \textbf{centroid analysis} revealing emergent cross-genre relationships validated by narrative archetype theory.}
+\resumeItem{Uncovered unexpected semantic relationships across genres through \textbf{centroid analysis}, validated by narrative archetype theory.}
 \resumeItem{Leading team to investigate \textbf{emergent scientific understanding in LLMs} by training domain-specific and shared-domain SAEs on physics, chemistry and biology textbooks, analyzing how models represent concepts (e.g., atomic structure) differently across disciplines while identifying shared fundamental features.}
 \resumeItem{Developing \textbf{dead neuron mitigation techniques and hierarchical architectures in SAEs} to control learned feature granularity, reducing reconstruction loss while improving interpretability and sparsity.}
 \resumeItemListEnd
@@ -180,9 +193,9 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 {Accessible and Accelerated Robotics (A$^2$R) Lab, Columbia University}{Sep 2024 -- May 2025}
 {Research Assistant}{New York, NY}
 \resumeItemListStart
-\resumeItem{Optimized and implemented \textbf{MobileNet and PyDNet depth estimation models onto resource-constrained microcontrollers} (Crazyflie, ESP32) using a custom efficient framework, achieving real-time, on-device depth perception for autonomous systems.}
-\resumeItem{Deployed \textbf{YOLOv11 for high-speed, real-time object detection in low-power embedded systems}, significantly enhancing autonomous target navigation and obstacle avoidance capabilities.}
-\resumeItem{Developed a \textbf{custom lightweight framework leveraging Teacher-Student Distillation} to compress deep learning models into a low-parameter configuration, ensuring efficient resource utilization and reliable operation across diverse microcontroller hardware.}
+\resumeItem{Optimized and implemented \textbf{MobileNet and PyDNet depth estimation models onto resource-constrained microcontrollers} (Crazyflie, ESP32), achieving real-time, on-device depth perception for autonomous navigation.}
+\resumeItem{Deployed \textbf{YOLOv11 for high-speed, real-time object detection in low-power embedded systems}, enhancing autonomous target navigation and obstacle avoidance.}
+\resumeItem{Developed a \textbf{custom lightweight framework leveraging Teacher-Student Distillation} to compress deep learning models into a low-parameter configuration, ensuring reliable operation across diverse microcontroller hardware.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -191,8 +204,8 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItemListStart
 \resumeItem{Developed and implemented a \textbf{novel Vision Transformer approach for Causal Action Understanding}, predicting both the action and its resulting object state changes by analyzing start/end frames and bounding box localizations.}
 \resumeItem{Developed an \textbf{advanced data curation pipeline integrating LLaMA 3.1 via few-shot prompting} to resolve issues like object naming inconsistencies and improve action extraction accuracy from raw Ego4D and YouCook2 narrations.}
-\resumeItem{Resolved a critical temporal misalignment in the Ego4D dataset by developing and implementing a \textbf{binary search algorithm to efficiently map narrations to corresponding video clips}, ensuring data coherence for action understanding.}
-\resumeItem{Established performance benchmarks by \textbf{training and evaluating multimodal baselines (Clip, BridgeFormer, Stateformer, ACTRON)} on the enhanced dataset, comparing their capabilities in action prediction and state change localization.}
+\resumeItem{Resolved a critical temporal misalignment in the Ego4D dataset by developing and implementing a \textbf{binary search algorithm to efficiently map narrations to corresponding video clips}, ensuring data coherence.}
+\resumeItem{Established performance benchmarks by \textbf{training and evaluating multimodal baselines (Clip, BridgeFormer, Stateformer, ACTRON)} on the enhanced dataset, comparing action-prediction and state-change performance.}
 \resumeItemListEnd
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -205,17 +218,17 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItem{Introduced a \textbf{novel SVG-based method for automated generation of diverse, annotated spectral image datasets} with varied configurations and backgrounds, overcoming limitations of traditional data creation.}
 \resumeItem{Evaluated the integration of \textbf{attention mechanisms (CBAM and SE) into the YOLO architecture} to further enhance feature extraction and improve classification performance in spectral image analysis.}
 \resumeItem{Conducted \textbf{perturbation analysis on the trained YOLO model} to understand and validate how the network was classifying spectra, providing interpretability for the detection mechanism.}
-\resumeItem{Successfully deployed trained YOLO models on smartphones for \textbf{rapid, real-time spectra classification}, benchmarking YOLOv8m and YOLOv8n performance and demonstrating superior efficiency over traditional 1D CNN approaches.}
+\resumeItem{Successfully deployed trained YOLO models on smartphones for \textbf{rapid, real-time spectra classification}, benchmarking YOLOv8m and YOLOv8n while outperforming traditional 1D CNNs in efficiency.}
 \resumeItemListEnd
 
 \resumeSubheading
 {International Institute of Information Technology Bangalore}{Jan 2024 -- Jun 2024}
 {Master's Thesis Project}{Bangalore, IN}
 \resumeItemListStart
-\resumeItem{Designed and implemented a \textbf{Panoptic Segmentation Guided Moving Object Segmentation (MOS) framework} to correct false positives in the state-of-the-art (SOTA) RigidMask model, specifically enhancing performance for SLAM systems.}
+\resumeItem{Designed and implemented a \textbf{Panoptic Segmentation Guided Moving Object Segmentation (MOS) framework} to correct false positives in the state-of-the-art (SOTA) RigidMask model, improving performance for SLAM.}
 \resumeItem{Localized the primary cause of SOTA model failure to \textbf{anomalies (spikes) in 3D P+P cost maps} for static objects near frame edges or under occlusion on the challenging VKITTI dataset.}
 \resumeItem{Integrated a \textbf{top-down information fusion pipeline combining panoptic segmentation (PanFPN), monocular depth estimation (Metric3D), and dense optical flow (RAFT)} as a robust post-processing correction step.}
-\resumeItem{Developed an \textbf{IoU-based panoptic instance tracking algorithm} and used dense optical flow matching to estimate per object motion in depth, achieving significantly higher reliability for objects in the 10m - 30m range compared to SIFT.}
+\resumeItem{Developed an \textbf{IoU-based panoptic instance tracking algorithm} and used dense optical flow matching to estimate per-object motion in depth, achieving higher reliability than SIFT for objects 10m-30m away.}
 \resumeItem{Engineered a \textbf{final correction layer using 3D P+P cost histogram analysis} to filter residual false positives caused by occlusions or close-range objects, cases where depth-based motion estimation fails.}
 \resumeItem{Achieved substantial quantitative improvements across the VKITTI dataset, including \textbf{increasing Background IoU to over 99\%} in tested scenes (e.g., from 87.67 to 99.41 in Scene 01).}
 \resumeItem{Improved the system's robustness by introducing a \textbf{Reliability Score metric} to penalize false positives in frames with no moving objects, with scores reaching 100.0 in scenes where the baseline had high false positive rates.}
@@ -228,7 +241,7 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItem{Developed and implemented a \textbf{Finite Gaussian Mixture Model (FGMM) with Linear Spatial Covariance structure} to perform unsupervised classification of high-dimensional spatial data (MC-simulated radiation dose grids).}
 \resumeItem{Engineered a \textbf{highly efficient covariance parameterization with only four free parameters}, making the model scalable regardless of the number of pixels (p).}
 \resumeItem{Applied an \textbf{Expectation-Maximization (EM) algorithm to classify biomedical MC simulation data} (e.g., 10 mGy vs. 500 mGy dose levels) based on differences in spatial patterns (covariance) rather than global intensity, confirming that higher dose levels exhibit lower spatial variance.}
-\resumeItem{Evaluated two decay functions (Quadratic and Sigmoid) for the spatial covariance component, finding that the \textbf{Sigmoid decay better approximates complex spatial patterns} (``many bumps" vs. ``single bump") relevant to cell/film radiation simulations.}
+\resumeItem{Evaluated two decay functions (Quadratic and Sigmoid) for the spatial covariance term, finding the \textbf{Sigmoid decay better approximates complex spatial patterns} (``many bumps" vs. ``single bump") in radiation data.}
 \resumeItemListEnd
 
 \resumeSubheading
@@ -240,16 +253,14 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItem{Executed \textbf{advanced multimodal image generation techniques} to enhance control and quality, eliminating manual design iterations and significantly improving the efficiency of creating branded visual assets.}
 \resumeItemListEnd
 
-\newpage
-
 \resumeSubheading
 {Multimodal Perception Lab, IIITB}{May 2022 -- May 2023}
 {Research Intern}{Bangalore, IN}
 \resumeItemListStart
-\resumeItem{Investigated and benchmarked \textbf{state-of-the-art GAN-based models for audio-video generation and style transfer}, focusing on applications like realistic lip synchronization (e.g., Wav2Lip) and semantic face editing (e.g., InterFaceGAN).}
+\resumeItem{Investigated and benchmarked \textbf{state-of-the-art GAN-based models for audio-video generation and style transfer}, focusing on applications like realistic lip synchronization (e.g., Wav2Lip) and semantic face editing.}
 \resumeItem{Implemented and optimized \textbf{various published GAN architectures for face manipulation} (e.g., InterFaceGAN, and models similar to Only a Matter of Style for age regression/transformation), and performed comprehensive testing and comparative analysis using custom datasets.}
 \resumeItem{Combined traditional computer graphics techniques with deep learning by \textbf{incorporating the FLAME 3D head model into GAN workflows}, which improved how realistic and structurally consistent the face edits looked, especially when moving beyond flat 2D images.}
-\resumeItem{Developed \textbf{SemUV, a deep learning system that generates and edits 3D human heads by working directly with UV texture maps using StyleGANv2}, bypassing the limitations of traditional 2D image manipulation approaches.}
+\resumeItem{Developed \textbf{SemUV, a deep learning system that generates and edits 3D human heads by working directly with UV texture maps using StyleGANv2}, bypassing traditional 2D image manipulation limits.}
 \resumeItem{Demonstrated \textbf{improved identity preservation and structural consistency compared to 2D methods through user study validation}, successfully editing facial features (age, gender, facial hair) while maintaining realistic appearance across different 3D poses.} 
 \resumeItem{Built a \textbf{flexible and efficient solution that works independently of 3D structure, lighting, and rendering settings}, allowing quick integration into existing graphics pipelines for VR, AR, gaming, and visual effects applications.}
 \resumeItemListEnd
@@ -270,18 +281,20 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 {Laser Materials Processing Division, RRCAT \href{https://drive.google.com/file/d/17LdNpJl5PiLeAiSnUvo3jRqvBoKuyRCR/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}{Dec 2021 -- Jan 2022}
 {Research Intern}{Indore, IN}
 \resumeItemListStart
-\resumeItem{Developed an \textbf{innovative, low-cost automated system (Arduino UNO \& CNC shield)} that enabled high-throughput spectral data acquisition (up to 250 spectra/hour), facilitating the generation of large, labeled datasets for ML training.}
-\resumeItem{Implemented a \textbf{novel raster scanning technique} and \textbf{vision-based automatic sample focus distance control} to significantly improve SERS data reproducibility and leverage dynamic 3D hotspots, enabling \textbf{detection down to a 5 nM limit}.}
+\resumeItem{Developed an \textbf{innovative, low-cost automated system (Arduino UNO \& CNC shield)} that enabled high-throughput spectral data acquisition (up to 250 spectra/hour), generating large labeled datasets for ML.}
+\resumeItem{Implemented a \textbf{novel raster scanning technique} and \textbf{vision-based automatic sample focus distance control}, improving SERS reproducibility via dynamic 3D hotspots and enabling \textbf{detection down to a 5 nM limit}.}
 \resumeItem{Created an \textbf{interactive Principal Component Analysis (PCA) GUI} for accessible data exploration, allowing non-experts to dynamically evaluate the impact of normalization methods on spectral data clustering.}
 \resumeItem{Developed a \textbf{novel SERS approach integrating machine learning (PCA \& LDA)} to achieve \textbf{$>$97\% accuracy in identifying complex pesticide mixtures}, addressing a gap in current analytical methods.}
-\resumeItem{Conducted ML classification and performance evaluation (SVM, kNN, etc.) across diverse datasets, employing \textbf{Recursive Feature Elimination (RFE) for optimal feature selection} and robust classification using limited spectral ranges.}
+\resumeItem{Conducted ML classification and performance evaluation (SVM, kNN, etc.) across diverse datasets, employing \textbf{Recursive Feature Elimination (RFE) for optimal feature selection} for robust classification with limited spectral data.}
 \resumeItemListEnd
+
+\newpage
 
 \resumeSubheading
 {Graphics Visualization Computing Lab, IIITB \href{https://drive.google.com/file/d/1oNTaE8Omw0AsDx3I-SSY7yNkdDnR_xYY/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}{May 2021 -- Jul 2021}
 {Research Intern}{Bangalore, IN}
 \resumeItemListStart
-\resumeItem{Developed and implemented \textbf{two novel phenotype-specific filtering methods (network-based and correlation-based)} to rank and select significant genes, effectively reducing the large gene space to an optimal size for exploratory visualization.}
+\resumeItem{Developed and implemented \textbf{two novel phenotype-specific filtering methods (network-based and correlation-based)} to rank and select significant genes, reducing the gene space to an optimal size for visualization.}
 \resumeItem{Constructed a \textbf{diseasome (disease-gene network) as an unbalanced bipartite graph} by integrating multi-omics data (DNA methylation and mRNA expression) for seven cancer phenotypes from TCGA (The Cancer Genome Atlas) using the Heterogeneous Correlation Network Model (HCNM).}
 \resumeItem{Designed a systematic \textbf{``filter-funnel-focus" workflow for gene prioritization} to ensure clutter-free visualization and focused analysis of key genes (e.g., 100+ genes).}
 \resumeItem{Conducted extensive downstream analysis, including \textbf{pathway enrichment (WikiPathways, Reactome, and KEGG) and functional enrichment (DAVID)}, to validate biological relevance and compare the performance of the two filtering methods across cancer types.}
@@ -289,15 +302,13 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItem{Integrated an \textbf{intuitive GUI with interactive features} (e.g., phenotype filtering, gene selection, color customization, node reordering) to facilitate disease-specific and gene-specific analysis.}
 \resumeItemListEnd
 
-\newpage
-
 \resumeSubheading
 {Web Science Laboratory, IIITB}{Apr 2020 -- Jun 2020}
 {Research Intern}{Bangalore, IN}
 \resumeItemListStart
 \resumeItem{Engineered and deployed a \textbf{full-stack, interactive COVID-19 trend simulator using React, Leaflet, and Recharts} for frontend and a \textbf{Python/Flask REST API backend} to efficiently generate and visualize predictions.}
 \resumeItem{Validated and refined the \textbf{core SEIR epidemic model implementation}, ensuring the correct integration of complex network diffusion and community interaction theory into the production code for accurate trend simulation.}
-\resumeItem{Executed comprehensive testing and troubleshooting of the parameter system and prediction generation logic, guaranteeing \textbf{reliable simulation results across 10+ user-controlled variables} (e.g., mobility, school closures) for policy analysis.}
+\resumeItem{Executed comprehensive testing and troubleshooting of the parameter system and prediction generation logic, guaranteeing \textbf{reliable simulation results across 10+ user-controlled variables} (e.g., mobility, school closures).}
 \resumeItemListEnd
 
 \resumeSubHeadingListEnd
@@ -312,7 +323,7 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItemListStart
 \resumeItem{Designed a memory-mapped 4-bit linear regression accelerator on Intel FPGA with a pipelined datapath for high-throughput accumulation and closed-form inference}
 \resumeItem{Achieved near-floating-point performance (R\textsuperscript{2} = 0.949) using quantized integer arithmetic in hardware}
-\resumeItem{Wrote a custom C-based Linux device driver and user-space interface to control the accelerator and stream training data via AXI-lite to ARM Cortex-A9}
+\resumeItem{Wrote a custom C-based Linux device driver and interface to stream training data via AXI-lite to ARM Cortex-A9}
 \resumeItemListEnd
 
 \vspace{-13pt}
@@ -320,7 +331,7 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 {\textbf{ArcCell: RNA-seq Cell Type Annotation Tool} (Computational Genomics Course Project) $|$ \emph{Python}}{Jan - May 2025}
 \resumeItemListStart
 \resumeItem{Developed a robust cell type annotation tool for sparse scRNA-seq data using ArcFace-based supervised embeddings}
-\resumeItem{Implemented a preprocessing pipeline with GF-ICF weighting, over- and under-sampling to enhance rare cell type representation}
+\resumeItem{Implemented a preprocessing pipeline with GF-ICF weighting and over/under-sampling for rare cell types}
 \resumeItem{Achieved 96\% F1-score on test data and 94\% on out-of-sample validation, outperforming CellTypist baseline (62\%)}
 \resumeItem{Integrated SHAP-based interpretability for gene attribution, finding biologically relevant marker genes across datasets}
 \resumeItemListEnd
@@ -356,7 +367,8 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItem{Designed a web application to visualize various features of Indian Ocean and Arabian Sea during the period of 29 Dec 2003 to 29 Dec 2005.}
 \resumeItemListEnd
 
-\vspace{-13pt}
+% \vspace{-13pt}
+\newpage
 \resumeProjectHeading
 {\textbf{2048 Playing Agent} (Personal Project) $|$ \emph{Python, PyTorch, Jupyter}}{Jun 2022}
 \resumeItemListStart
@@ -378,7 +390,7 @@ M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.0
 \resumeItem{Embedded various machine learning models using Python and scikit-learn for determination of compounds for applications like identifying pesticides.}
 \resumeItemListEnd
 
-\newpage
+\vspace{-13pt}
 \resumeProjectHeading{\textbf{Image Captioning Tool} (Visual Recognition Course Project) $|$ \emph{Python, TensorFlow, Jupyter}}{May 2022}
 \resumeItemListStart
 \resumeItem{A CNN-LSTM network was implemented using InceptionNetv3 as feature extractor to label various images provided in the publically available Flickr8K dataset.}
@@ -499,9 +511,7 @@ Volume 1383, 15 January 2026, 344914, ISSN 0003-2670 \href{https://doi.org/10.10
 \vspace{-4pt}  
 \resumeItem{ Analytica Chimica Acta, 2024, 343063, ISSN 0003-2670 \href{https://doi.org/10.1016/j.aca.2024.343063}{\raisebox{-0.2\height}\faExternalLink}}
 
-\vspace{12pt}
-
-\newpage
+\vspace{-12pt}
 
 \publicationHeading{\textbf{Optical response of Au films for reproducible Si nano-structuring and its application for efficient micro-drop SERS with portable Raman system}}{Sep 2023}
 \vspace{-4pt}
@@ -587,7 +597,7 @@ Volume 1383, 15 January 2026, 344914, ISSN 0003-2670 \href{https://doi.org/10.10
     %\resumeSubHeadingListEnd
 
  %-----------ACHIEVEMENTS---------------
- \newpage
+ \vspace{-12pt}
 \section{Achievements}
 \resumeItemListStart
     \resumeItem{IAPR Best Student Paper Award at CVIP 2024 \href{https://cvip2024.iiitdm.ac.in/awards}{\raisebox{-0.2\height}\faExternalLink}}

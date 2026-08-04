@@ -1,11 +1,27 @@
 [
   {
+    "id": "columbia-ra",
+    "organization": "Columbia University",
+    "role": "Research Assistant",
+    "location": "New York, NY",
+    "startDate": "2026-01-01",
+    "endDate": "2026-08-01",
+    "bullets": [
+      "Designed a Frequency Convolution Network (FCN) using dilated 1D convolutions along the log-frequency axis of a Variable-Q Transform (VQT) frontend, achieving a large harmonic receptive field with only 17.8K parameters for real-time monophonic pitch and voicing estimation.",
+      "Developed spectral-domain noise and frequency-scaling augmentation strategies to induce noise invariance and pitch equivariance, evaluated on MDB-stem-synth, PTDB-TUG, and MIR-1K with CHiME-Home as a noise source.",
+      "Achieved 98.8% RPA50 on MDB-stem-synth, 93.1% on PTDB-TUG, and 97.5% on MIR-1K in clean conditions while keeping RPA50 above 80% at 0 dB SNR across datasets, outperforming a matched-parameter CNN baseline and remaining competitive with substantially larger pitch-estimation models.",
+      "Proposed Counterpoint Informed Neural Networks (CINN), embedding Fux's species counterpoint rules as a differentiable, physics-informed penalty on a MinGRU encoder-decoder that generates a soprano accompaniment against a cantus firmus.",
+      "Introduced a joint pitch-attack coupling loss (via Jensen-Shannon divergence between neighboring pitch distributions) and an attack-prediction head to keep rhythms and articulations plausible, preventing collapse into rests or rapid spurious attacks.",
+      "Implemented a joint beam search over pitch and attack at inference to keep rhythm aligned with the cantus firmus, benchmarking against a MinGRU baseline and a Transformer variant on a held-out composer, reducing rule-based violations across harmonic, melodic, and rhythmic categories with minimal cross-entropy trade-off."
+    ]
+  },
+  {
     "id": "columbia-thesis",
     "organization": "Columbia University",
     "role": "Master's Thesis Project",
     "location": "New York, NY",
     "startDate": "2025-01-01",
-    "endDate": null,
+    "endDate": "2025-12-01",
     "bullets": [
       "Developed a novel Variational Autoencoder (VAE)-based Audio Encoder with a Mamba-enhanced Differentiable Digital Signal Processing (DDSP) Decoder for direct waveform analysis, enabling music synthesis and timbre transfer.",
       "Explored minimal Recurrent Neural Networks (minLSTMs and minGRUs), which significantly improve sequence modeling performance and efficiency by leveraging fewer parameters.",
