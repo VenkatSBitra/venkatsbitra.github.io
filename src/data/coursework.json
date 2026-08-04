@@ -1,0 +1,69 @@
+[
+  {
+    "category": "Artificial Intelligence and Machine Learning",
+    "courses": [
+      "Machine Learning",
+      "Math for Machine Learning (MML)",
+      "MML for Signal Recognition",
+      "Computer Vision",
+      "Natural Language Processing",
+      "Reinforcement Learning",
+      "Few-shot Learning",
+      "Causal Inference and Learning",
+      "Neuromorphic Computing"
+    ]
+  },
+  {
+    "category": "Computer Science",
+    "courses": [
+      "Topics in Computability and Learning",
+      "Data Visualization",
+      "Software Testing",
+      "Operating Systems",
+      "Programming Languages",
+      "Software Engineering",
+      "Introduction to Automata Theory and Computability",
+      "Database Systems",
+      "Object Oriented Programming",
+      "Design and Analysis of Algorithms",
+      "Data Structures and Algorithms",
+      "Programming"
+    ]
+  },
+  {
+    "category": "Electronics and Communication",
+    "courses": [
+      "Signals and Systems",
+      "Computer Architecture",
+      "Digital Design",
+      "Embedded Systems",
+      "Control Systems",
+      "Computer Networks"
+    ]
+  },
+  {
+    "category": "Mathematics and Basic Sciences",
+    "courses": [
+      "Graph Theory",
+      "Probability",
+      "Statistics",
+      "Linear Algebra",
+      "Computational Genomics",
+      "Calculus",
+      "Real Analysis",
+      "Physics",
+      "Chemistry"
+    ]
+  },
+  {
+    "category": "Social Sciences",
+    "courses": [
+      "Software Product Management",
+      "Social Complexity and Systems Thinking",
+      "History of Ideas",
+      "Technical Communication",
+      "Economics",
+      "English"
+    ]
+  }
+]

@@ -1,0 +1,630 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+% \usepackage{fontawesome5}
+\usepackage{fontawesome}
+\usepackage{multicol}
+\usepackage{ulem}
+\usepackage{setspace}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\usepackage{setspace}
+\usepackage{etoolbox}
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+% ####################################################################
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\publicationHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{@{\extracolsep{\fill}} l r}
+      \parbox[t]{0.9\textwidth}{\small#1} & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+
+% ########################################################
+
+
+\begin{document}
+
+\begin{center}
+    {\Huge \scshape Venkat Suprabath Bitra} \\ \vspace{1pt}
+    % Columbia University in the City of New York, New York, USA \\ \vspace{1pt}
+    \small \raisebox{-0.1\height}\faPhone\ +1 (646) 537 0987 ~ \href{mailto:vsb2127@columbia.edu}{\raisebox{-0.2\height}\faEnvelope\  \underline{vsb2127@columbia.edu}} ~
+    \href{https://linkedin.com/in/venkat-suprabath/}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/venkat-suprabath}}  ~
+    \href{https://venkatsbitra.github.io/}{\raisebox{-0.2\height}\faGithub\ \underline{venkatsbitra.github.io}}
+    \vspace{-8pt}
+\end{center}
+
+\section{Education}
+
+\resumeSubHeadingListStart
+\resumeSubheading{Columbia University, USA}{Sep 2024 -- Dec 2025}{MS in Computer Science}{GPA: 4.231}
+\resumeSubheading{IIIT Bangalore, India}{Aug 2019 -- Jul 2024}{Integrated 
+M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering}{GPA: 3.85 / 4.00}
+\resumeSubHeadingListEnd
+
+\section{Experience}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resumeSubHeadingListStart
+\resumeSubheading
+{Columbia University}{Jan 2025 -- Present}
+{Master's Thesis Project}{New York, NY}
+\resumeItemListStart
+\resumeItem{Developed a novel \textbf{Variational Autoencoder (VAE)}-based Audio Encoder with a \textbf{Mamba-enhanced Differentiable Digital Signal Processing (DDSP) Decoder} for direct waveform analysis, enabling music synthesis and timbre transfer.}
+\resumeItem{Explored \textbf{minimal Recurrent Neural Networks (minLSTMs and minGRUs)}, which significantly improve sequence modeling performance and efficiency by leveraging fewer parameters.}
+\resumeItem{Developed \textbf{Bidirectional Minimal GRU (BiMinGRU)} to effectively incorporate past and future context in the sequence model, removing the reliance on causal convolutions for multi-level architectural designs.}
+\resumeItem{Implemented a \textbf{self-supervised Expectation-Maximisation (EM) based learning approach} to enhance fundamental frequency (F0) and voicing estimation, capitalizing on the co-dependent relationship between existence of fundamental frequency and voicing to filter unvoiced frames and preventing bad gradient updates.}
+\resumeItem{Engineered a highly parameter-efficient \textbf{frame-level F0 and voicing extraction model with only $\approx$75K parameters} using Constant Q-Transform (CQT) features, prioritizing lightweight and efficient processing for deployment.}
+\resumeItem{Demonstrated a novel \textbf{fully end-to-end trainable DDSP-based music synthesis and timbre transfer system} that accepts any reference monophonic audio, eliminating dependence on external F0 or loudness models allowing for highly specialized models for end-user use cases.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Complex Resilient Intelligent Systems (CRIS) Lab, Columbia University}{Sep 2024 -- Present}
+{Research Assistant}{New York, NY}
+\resumeItemListStart
+\resumeItem{Investigated interpretability of LLMs (GPT-2, Gemma 2B Instruct) by analyzing hidden representations using \textbf{dictionary learning and sparse autoencoders} to uncover monosemantic features.}
+\resumeItem{Implemented \textbf{feature clamping approach} (by Anthropic) to steer model outputs toward specific features, improving controllability and interpretability.}
+\resumeItem{Applied \textbf{Sparse Autoencoders (SAEs) and BERTopic to 500 books across 20 genres}, extracting monosemantic features from dense embeddings at multiple granularities to map semantic structure in decoder-based LLMs.}
+\resumeItem{Uncovered unexpected cross-genre semantic relationships through \textbf{centroid analysis} revealing emergent cross-genre relationships validated by narrative archetype theory.}
+\resumeItem{Leading team to investigate \textbf{emergent scientific understanding in LLMs} by training domain-specific and shared-domain SAEs on physics, chemistry and biology textbooks, analyzing how models represent concepts (e.g., atomic structure) differently across disciplines while identifying shared fundamental features.}
+\resumeItem{Developing \textbf{dead neuron mitigation techniques and hierarchical architectures in SAEs} to control learned feature granularity, reducing reconstruction loss while improving interpretability and sparsity.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Accessible and Accelerated Robotics (A$^2$R) Lab, Columbia University}{Sep 2024 -- May 2025}
+{Research Assistant}{New York, NY}
+\resumeItemListStart
+\resumeItem{Optimized and implemented \textbf{MobileNet and PyDNet depth estimation models onto resource-constrained microcontrollers} (Crazyflie, ESP32) using a custom efficient framework, achieving real-time, on-device depth perception for autonomous systems.}
+\resumeItem{Deployed \textbf{YOLOv11 for high-speed, real-time object detection in low-power embedded systems}, significantly enhancing autonomous target navigation and obstacle avoidance capabilities.}
+\resumeItem{Developed a \textbf{custom lightweight framework leveraging Teacher-Student Distillation} to compress deep learning models into a low-parameter configuration, ensuring efficient resource utilization and reliable operation across diverse microcontroller hardware.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Digital Video and Multimedia (DVMM) Lab, Columbia University}{Sep 2024 -- Feb 2025}
+{Research Assistant}{New York, NY}
+\resumeItemListStart
+\resumeItem{Developed and implemented a \textbf{novel Vision Transformer approach for Causal Action Understanding}, predicting both the action and its resulting object state changes by analyzing start/end frames and bounding box localizations.}
+\resumeItem{Developed an \textbf{advanced data curation pipeline integrating LLaMA 3.1 via few-shot prompting} to resolve issues like object naming inconsistencies and improve action extraction accuracy from raw Ego4D and YouCook2 narrations.}
+\resumeItem{Resolved a critical temporal misalignment in the Ego4D dataset by developing and implementing a \textbf{binary search algorithm to efficiently map narrations to corresponding video clips}, ensuring data coherence for action understanding.}
+\resumeItem{Established performance benchmarks by \textbf{training and evaluating multimodal baselines (Clip, BridgeFormer, Stateformer, ACTRON)} on the enhanced dataset, comparing their capabilities in action prediction and state change localization.}
+\resumeItemListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\resumeSubheading
+{Laser Materials Processing Division, RRCAT}{Jul 2024 -- Aug 2024}
+{Research Intern}{Indore, IN}
+\resumeItemListStart
+\resumeItem{Adapted the \textbf{YOLO object detection framework for generalized spectra classification}, achieving \textbf{mAP $>$0.992 for 90 spectra classes} and eliminating the traditional need for extensive data preprocessing.}
+\resumeItem{Introduced a \textbf{novel SVG-based method for automated generation of diverse, annotated spectral image datasets} with varied configurations and backgrounds, overcoming limitations of traditional data creation.}
+\resumeItem{Evaluated the integration of \textbf{attention mechanisms (CBAM and SE) into the YOLO architecture} to further enhance feature extraction and improve classification performance in spectral image analysis.}
+\resumeItem{Conducted \textbf{perturbation analysis on the trained YOLO model} to understand and validate how the network was classifying spectra, providing interpretability for the detection mechanism.}
+\resumeItem{Successfully deployed trained YOLO models on smartphones for \textbf{rapid, real-time spectra classification}, benchmarking YOLOv8m and YOLOv8n performance and demonstrating superior efficiency over traditional 1D CNN approaches.}
+\resumeItemListEnd
+
+\resumeSubheading
+{International Institute of Information Technology Bangalore}{Jan 2024 -- Jun 2024}
+{Master's Thesis Project}{Bangalore, IN}
+\resumeItemListStart
+\resumeItem{Designed and implemented a \textbf{Panoptic Segmentation Guided Moving Object Segmentation (MOS) framework} to correct false positives in the state-of-the-art (SOTA) RigidMask model, specifically enhancing performance for SLAM systems.}
+\resumeItem{Localized the primary cause of SOTA model failure to \textbf{anomalies (spikes) in 3D P+P cost maps} for static objects near frame edges or under occlusion on the challenging VKITTI dataset.}
+\resumeItem{Integrated a \textbf{top-down information fusion pipeline combining panoptic segmentation (PanFPN), monocular depth estimation (Metric3D), and dense optical flow (RAFT)} as a robust post-processing correction step.}
+\resumeItem{Developed an \textbf{IoU-based panoptic instance tracking algorithm} and used dense optical flow matching to estimate per object motion in depth, achieving significantly higher reliability for objects in the 10m - 30m range compared to SIFT.}
+\resumeItem{Engineered a \textbf{final correction layer using 3D P+P cost histogram analysis} to filter residual false positives caused by occlusions or close-range objects, cases where depth-based motion estimation fails.}
+\resumeItem{Achieved substantial quantitative improvements across the VKITTI dataset, including \textbf{increasing Background IoU to over 99\%} in tested scenes (e.g., from 87.67 to 99.41 in Scene 01).}
+\resumeItem{Improved the system's robustness by introducing a \textbf{Reliability Score metric} to penalize false positives in frames with no moving objects, with scores reaching 100.0 in scenes where the baseline had high false positive rates.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Statistics and Machine Learning Laboratory, UBC Okanagan Campus \href{https://drive.google.com/file/d/1Rt6sj3cNurPYabwLlw6IlGi88XK0PWEo/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}{Aug 2023 -- Dec 2023}
+{Research Intern}{Kelowna, CA}
+\resumeItemListStart
+\resumeItem{Developed and implemented a \textbf{Finite Gaussian Mixture Model (FGMM) with Linear Spatial Covariance structure} to perform unsupervised classification of high-dimensional spatial data (MC-simulated radiation dose grids).}
+\resumeItem{Engineered a \textbf{highly efficient covariance parameterization with only four free parameters}, making the model scalable regardless of the number of pixels (p).}
+\resumeItem{Applied an \textbf{Expectation-Maximization (EM) algorithm to classify biomedical MC simulation data} (e.g., 10 mGy vs. 500 mGy dose levels) based on differences in spatial patterns (covariance) rather than global intensity, confirming that higher dose levels exhibit lower spatial variance.}
+\resumeItem{Evaluated two decay functions (Quadratic and Sigmoid) for the spatial covariance component, finding that the \textbf{Sigmoid decay better approximates complex spatial patterns} (``many bumps" vs. ``single bump") relevant to cell/film radiation simulations.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Adobe Research \href{https://drive.google.com/file/d/1CyZFnXeJqNbwFSd9rFtHVOSS2556KXTW/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}{May 2023 -- Jul 2023}
+{Research Intern}{Bangalore, IN}
+\resumeItemListStart
+\resumeItem{Engineered and optimized \textbf{diffusion models with multimodal constraints (text and visual inputs)} to gain granular control over image synthesis, accelerating and streamlining the product design creation workflow.}
+\resumeItem{Produced \textbf{visually cohesive, marketing-ready images} by leveraging the constrained generative models, ensuring strict adherence to brand references and style guidelines to drive visual consistency across product assets.}
+\resumeItem{Executed \textbf{advanced multimodal image generation techniques} to enhance control and quality, eliminating manual design iterations and significantly improving the efficiency of creating branded visual assets.}
+\resumeItemListEnd
+
+\newpage
+
+\resumeSubheading
+{Multimodal Perception Lab, IIITB}{May 2022 -- May 2023}
+{Research Intern}{Bangalore, IN}
+\resumeItemListStart
+\resumeItem{Investigated and benchmarked \textbf{state-of-the-art GAN-based models for audio-video generation and style transfer}, focusing on applications like realistic lip synchronization (e.g., Wav2Lip) and semantic face editing (e.g., InterFaceGAN).}
+\resumeItem{Implemented and optimized \textbf{various published GAN architectures for face manipulation} (e.g., InterFaceGAN, and models similar to Only a Matter of Style for age regression/transformation), and performed comprehensive testing and comparative analysis using custom datasets.}
+\resumeItem{Combined traditional computer graphics techniques with deep learning by \textbf{incorporating the FLAME 3D head model into GAN workflows}, which improved how realistic and structurally consistent the face edits looked, especially when moving beyond flat 2D images.}
+\resumeItem{Developed \textbf{SemUV, a deep learning system that generates and edits 3D human heads by working directly with UV texture maps using StyleGANv2}, bypassing the limitations of traditional 2D image manipulation approaches.}
+\resumeItem{Demonstrated \textbf{improved identity preservation and structural consistency compared to 2D methods through user study validation}, successfully editing facial features (age, gender, facial hair) while maintaining realistic appearance across different 3D poses.} 
+\resumeItem{Built a \textbf{flexible and efficient solution that works independently of 3D structure, lighting, and rendering settings}, allowing quick integration into existing graphics pipelines for VR, AR, gaming, and visual effects applications.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Laser Materials Processing Division, RRCAT}{Dec 2022 -- Jan 2023}
+% \href{https://iiitbac-my.sharepoint.com/:b:/g/personal/venkat_suprabath_iiitb_ac_in/EQRnLjIrcMZCieECCZMimTcBTbJqrM9awR1M9IKdC1cCAQ?e=XIDMYL}{\raisebox{-0.2\height}\faExternalLink}
+{Research Intern}{Indore, IN}
+\resumeItemListStart
+\resumeItem{Optimized and deployed an \textbf{8-bit quantized CNN onto resource-constrained TinyML hardware (Arduino Nano 33 BLE)} to achieve accurate classification of 22 complex spectral classes.}
+\resumeItem{Achieved \textbf{$>$99.5\% classification accuracy on the quantized model} by demonstrating the critical role of data normalization, enabling high-precision spectral analysis for field-deployable analytical instrumentation.}
+\resumeItem{Designed and implemented the \textbf{complete spectral analysis pipeline on-device (preprocessing, ML classification, and analyte quantification)} to ensure real-time, autonomous decision-making without external computational or cloud resources.}
+\resumeItemListEnd
+
+% \newpage
+
+\resumeSubheading
+{Laser Materials Processing Division, RRCAT \href{https://drive.google.com/file/d/17LdNpJl5PiLeAiSnUvo3jRqvBoKuyRCR/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}{Dec 2021 -- Jan 2022}
+{Research Intern}{Indore, IN}
+\resumeItemListStart
+\resumeItem{Developed an \textbf{innovative, low-cost automated system (Arduino UNO \& CNC shield)} that enabled high-throughput spectral data acquisition (up to 250 spectra/hour), facilitating the generation of large, labeled datasets for ML training.}
+\resumeItem{Implemented a \textbf{novel raster scanning technique} and \textbf{vision-based automatic sample focus distance control} to significantly improve SERS data reproducibility and leverage dynamic 3D hotspots, enabling \textbf{detection down to a 5 nM limit}.}
+\resumeItem{Created an \textbf{interactive Principal Component Analysis (PCA) GUI} for accessible data exploration, allowing non-experts to dynamically evaluate the impact of normalization methods on spectral data clustering.}
+\resumeItem{Developed a \textbf{novel SERS approach integrating machine learning (PCA \& LDA)} to achieve \textbf{$>$97\% accuracy in identifying complex pesticide mixtures}, addressing a gap in current analytical methods.}
+\resumeItem{Conducted ML classification and performance evaluation (SVM, kNN, etc.) across diverse datasets, employing \textbf{Recursive Feature Elimination (RFE) for optimal feature selection} and robust classification using limited spectral ranges.}
+\resumeItemListEnd
+
+\resumeSubheading
+{Graphics Visualization Computing Lab, IIITB \href{https://drive.google.com/file/d/1oNTaE8Omw0AsDx3I-SSY7yNkdDnR_xYY/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}{May 2021 -- Jul 2021}
+{Research Intern}{Bangalore, IN}
+\resumeItemListStart
+\resumeItem{Developed and implemented \textbf{two novel phenotype-specific filtering methods (network-based and correlation-based)} to rank and select significant genes, effectively reducing the large gene space to an optimal size for exploratory visualization.}
+\resumeItem{Constructed a \textbf{diseasome (disease-gene network) as an unbalanced bipartite graph} by integrating multi-omics data (DNA methylation and mRNA expression) for seven cancer phenotypes from TCGA (The Cancer Genome Atlas) using the Heterogeneous Correlation Network Model (HCNM).}
+\resumeItem{Designed a systematic \textbf{``filter-funnel-focus" workflow for gene prioritization} to ensure clutter-free visualization and focused analysis of key genes (e.g., 100+ genes).}
+\resumeItem{Conducted extensive downstream analysis, including \textbf{pathway enrichment (WikiPathways, Reactome, and KEGG) and functional enrichment (DAVID)}, to validate biological relevance and compare the performance of the two filtering methods across cancer types.}
+\resumeItem{Developed \textbf{RadTrixVis, an interactive web-based visualization tool using RadTrix, a novel hybrid graph layout}, to display complex disease-gene networks. The layout places a matrix at the center to dramatically reduce visual clutter and edge crossings when showing relationships between diseases and genes.}
+\resumeItem{Integrated an \textbf{intuitive GUI with interactive features} (e.g., phenotype filtering, gene selection, color customization, node reordering) to facilitate disease-specific and gene-specific analysis.}
+\resumeItemListEnd
+
+\newpage
+
+\resumeSubheading
+{Web Science Laboratory, IIITB}{Apr 2020 -- Jun 2020}
+{Research Intern}{Bangalore, IN}
+\resumeItemListStart
+\resumeItem{Engineered and deployed a \textbf{full-stack, interactive COVID-19 trend simulator using React, Leaflet, and Recharts} for frontend and a \textbf{Python/Flask REST API backend} to efficiently generate and visualize predictions.}
+\resumeItem{Validated and refined the \textbf{core SEIR epidemic model implementation}, ensuring the correct integration of complex network diffusion and community interaction theory into the production code for accurate trend simulation.}
+\resumeItem{Executed comprehensive testing and troubleshooting of the parameter system and prediction generation logic, guaranteeing \textbf{reliable simulation results across 10+ user-controlled variables} (e.g., mobility, school closures) for policy analysis.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-16pt}
+
+\section{Projects}
+
+\resumeSubHeadingListStart
+
+\resumeProjectHeading
+{\textbf{Linear Regression Accelerator for FPGA} (Embedded Systems Course Project) $|$ \emph{C, Verilog, Quartus}}{Jan - May 2025}
+\resumeItemListStart
+\resumeItem{Designed a memory-mapped 4-bit linear regression accelerator on Intel FPGA with a pipelined datapath for high-throughput accumulation and closed-form inference}
+\resumeItem{Achieved near-floating-point performance (R\textsuperscript{2} = 0.949) using quantized integer arithmetic in hardware}
+\resumeItem{Wrote a custom C-based Linux device driver and user-space interface to control the accelerator and stream training data via AXI-lite to ARM Cortex-A9}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{ArcCell: RNA-seq Cell Type Annotation Tool} (Computational Genomics Course Project) $|$ \emph{Python}}{Jan - May 2025}
+\resumeItemListStart
+\resumeItem{Developed a robust cell type annotation tool for sparse scRNA-seq data using ArcFace-based supervised embeddings}
+\resumeItem{Implemented a preprocessing pipeline with GF-ICF weighting, over- and under-sampling to enhance rare cell type representation}
+\resumeItem{Achieved 96\% F1-score on test data and 94\% on out-of-sample validation, outperforming CellTypist baseline (62\%)}
+\resumeItem{Integrated SHAP-based interpretability for gene attribution, finding biologically relevant marker genes across datasets}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{RAG based LLM Chatbot} $|$ \emph{Python, LangChain, Ollama}}{Nov - Dec 2024}
+\resumeItemListStart
+\resumeItem{Developed a Retrieval-Augmented Generation (RAG) chatbot using LangChain and Ollama for enhanced context-aware responses}
+\resumeItem{Implemented vector embedding and efficient document retrieval to improve answer relevance and accuracy}
+\resumeItem{Integrated local LLM deployment with Ollama, reducing latency and ensuring data privacy}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Reinforcement Learning based Chatbot} $|$ \emph{Python, PyTorch, TensorFlow}}{Jan - May 2023}
+\resumeItemListStart
+\resumeItem{Design two chatbots (Agent A and Agent B) using policy gradient based training strategies so that they can handle prolonged meaningful natural conversations between them}
+\resumeItem{Implement training techniques to give two separate personas for Agent A and Agent B.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Abacus based Mental Calculation using Neuromorphic Architecture} $|$ \emph{Python, Nengo}}{Aug - Dec 2022}
+\resumeItemListStart
+\resumeItem{Implementation of different abacus based arithmetic operations to mimic mental calculations using Neural Engineering Framework.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{Oceanic Data Visualization} (Data Visualization Course Project) $|$ \emph{Python, Svelte, Flask, D3.js}}{Aug 2022}
+\resumeItemListStart
+\resumeItem{Designed a web application to visualize various features of Indian Ocean and Arabian Sea during the period of 29 Dec 2003 to 29 Dec 2005.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading
+{\textbf{2048 Playing Agent} (Personal Project) $|$ \emph{Python, PyTorch, Jupyter}}{Jun 2022}
+\resumeItemListStart
+\resumeItem{Designed a reinforcement learning agent to play 2048 using different algorithms DQN, PPO, NEAT and Markov Trees.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading{\textbf{Visual Programming Language} (Programming Languages Course Project) $|$ \emph{JavaScript, Blockly}}{Jan 2022}
+\resumeItemListStart
+\resumeItem{Web based visual programming language to emulate Turtle using Blockly transpiler for equivalent JS code generation.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+% \newpage
+\resumeProjectHeading{\textbf{Comprehensive Spectroscopic Data Processing and Visualization Tool} $|$ \emph{Python, React, ECharts}}{Mar - May 2022}
+\resumeItemListStart
+\resumeItem{Designed a full-stack novel software tool for comprehensive data analysis of batch Raman spectra with features like background correction, peaks analysis, heatmaps, SNV, PCA-SVM analysis, spectral data libraries etc.}
+\resumeItem{Utilised React and Apache ECharts for designing frontend and data visualizations of the analysed data provided by backend built using Python and Flask.}
+\resumeItem{Embedded various machine learning models using Python and scikit-learn for determination of compounds for applications like identifying pesticides.}
+\resumeItemListEnd
+
+\newpage
+\resumeProjectHeading{\textbf{Image Captioning Tool} (Visual Recognition Course Project) $|$ \emph{Python, TensorFlow, Jupyter}}{May 2022}
+\resumeItemListStart
+\resumeItem{A CNN-LSTM network was implemented using InceptionNetv3 as feature extractor to label various images provided in the publically available Flickr8K dataset.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading{\textbf{Auto Rickshaw Detection} (Visual Recognition Course Project) $|$ \emph{Python, PyTorch, Jupyter}}{Mar 2022}
+\resumeItemListStart
+\resumeItem{Designed object detection model using YOLOv5 on self curated and labelled set of images of auto rickshaw.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading{\textbf{Web Scraping Tool} (Personal Project) $|$ \emph{Python, Selenium, SQLite}}{Jan 2022}
+\resumeItemListStart
+\resumeItem{Program to scrape publication DOI and other details from different publisher websites based on user given keywords and record them in a database for ease of querying for researchers.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading{\textbf{NLP based Sentiment Analysis} (Machine Learning Course Project) $|$ \emph{Python, Scikit-Learn, Jupyter}}{Dec 2021}
+\resumeItemListStart
+\resumeItem{Machine Learning model for multiclass classification of a sentence into six different types of sentimentally hurting classes; hosted as Community Kaggle Competition.}
+\resumeItemListEnd
+
+\vspace{-13pt}
+\resumeProjectHeading{\textbf{Face Recognition based Security System} (Hackathon Project) $|$ \emph{PyTorch, Scikit-Learn, OpenCV}}{Jan 2020}
+\resumeItemListStart
+\resumeItem{Real time image pre-processing and face detection using OpenCV and Python integrated with pretrained Deep Learning model to determine strangers and owners.}
+\resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+\section{Publications}
+
+\resumeSubHeadingListStart
+
+\publicationHeading{\textbf{Lightweight Self-Supervised Detection of Fundamental Frequency and Accurate Probability of Voicing in Monophonic Music}}{Mar 2026}
+\vspace{-4pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}, Homayoon Beigi}
+\vspace{-4pt}
+\resumeItem{15$^{th}$ International Conference on Pattern Recognition Applications and Methods (ICPRAM 2026) \href{https://www.arxiv.org/abs/2601.11768}{\raisebox{-0.2\height}\faExternalLink}}
+% \href{https://doi.org/10.1109/CAI64502.2025.00124}
+
+\vspace{-12pt}
+
+\publicationHeading{\textbf{Spatial Covariance Constraints for Gaussian Mixture Models}}{Jan 2026}
+\vspace{-12pt}
+\resumeItem{Hanzhang Lu, Keiran Malott, \textbf{Venkat Suprabath Bitra}, et al. (full author list in paper)}
+\vspace{-4pt}
+\resumeItem{Submitted to Bioinformatics \href{https://www.arxiv.org/abs/2601.11768}{(Arxiv Preprint \raisebox{-0.2\height}\faExternalLink)}}
+% \href{https://doi.org/10.1109/CAI64502.2025.00124}
+
+\vspace{-12pt}
+
+\publicationHeading{\textbf{YOLO-spectra: A generalized framework for rapid simultaneous detection and classification of Raman spectra in images with mobile devices for enhancing on-site applications}}{Jan 2026}
+\vspace{-4pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}, Shweta Verma and B. Tirumala Rao}
+\vspace{-4pt}  
+\resumeItem{ Analytica Chimica Acta
+Volume 1383, 15 January 2026, 344914, ISSN 0003-2670 \href{https://doi.org/10.1016/j.aca.2025.344914}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-12pt}
+
+\publicationHeading{\textbf{HiT-IP Raman: An innovative high-throughput spectra acquisition system with interactive PCA combined machine learning for instant classification of various analytes and mixtures}}{Nov 2025}
+\vspace{-4pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}, Shweta Verma and B. Tirumala Rao}
+\vspace{-4pt}  
+\resumeItem{ Microchemical Volume 219, December 2025, 116054, 0026-265X \href{https://doi.org/10.1016/j.microc.2025.116054}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-12pt}
+
+% \vspace{-6pt}
+% Diseasome
+\publicationHeading{\textbf{Network-based Diseasome Construction from Multi-omics Data and RadTrix Visualization}}{Nov 2025}
+\vspace{-12pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}, Reddy Rani Vangimalla, Jaya Sreevalsan-Nair}
+\vspace{-4pt}
+\resumeItem{IEEE Transactions on Computational Biology and Bioinformatics, vol. 22, no. 6, pp. 3550-3556, Nov-Dec 2025 \href{https://doi.org/10.1109/TCBBIO.2025.3599771}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-12pt}
+
+\publicationHeading{\textbf{Machine learning driven trace detection of pesticide mixtures using citrate optimized Au nanoparticles based in-expensive efficient micro-drop SERS with portable spectrometer}}{Nov 2025}
+\vspace{-4pt}
+\resumeItem{Shweta Verma, \textbf{Venkat Suprabath Bitra}, B. Tirumala Rao}
+\vspace{-4pt}  
+\resumeItem{ Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, Volume 340, 2025, 126333, ISSN 1386-1425 \href{https://doi.org/10.1016/j.saa.2025.126333}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-12pt}
+
+\publicationHeading{\textbf{DiffCraft: A Modular Differentiable Framework for Music Synthesis with Timbre Transfer}}{May 2025}
+\vspace{-12pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}, Homayoon Beigi}
+\vspace{-4pt}
+\resumeItem{IEEE Conference on Artificial Intelligence (CAI 2025) \href{https://doi.org/10.1109/CAI64502.2025.00124}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-12pt}
+
+% SEM-UV 
+
+\publicationHeading{\textbf{SemUV: Deep Learning based semantic manipulation over UV texture map of virtual human heads}}{Dec 2024}
+\vspace{-12pt}
+\resumeItem{Anirban Mukherjee, \textbf{Venkat Suprabath Bitra}, Vignesh Bondugula, Tarun Reddy Tallapureddy, Dinesh Babu Jayagopi}
+\vspace{-4pt}
+\resumeItem{$9^{th}$  International Conference on Computer Vision \& Image Processing (CVIP 2024) \href{https://doi.org/10.48550/arXiv.2407.00229}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-6pt}
+\resumeItemListStart
+\resumeItem{Won IAPR Best Student Paper Award}
+\resumeItemListEnd
+
+\vspace{-12pt}
+
+% TinyML-Raman
+
+\publicationHeading{\textbf{TinyML-Raman: A Novel IoT Based Field-Deployable Spectra Analysis for Accurate Identification of Pharmaceuticals and Trace Dye-Pesticide Mixtures from Facile SERS method}}{Aug 2024}
+\vspace{-4pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}, Shweta Verma, B. Tirumala Rao}
+\vspace{-4pt}  
+\resumeItem{ Analytica Chimica Acta, 2024, 343063, ISSN 0003-2670 \href{https://doi.org/10.1016/j.aca.2024.343063}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{12pt}
+
+\newpage
+
+\publicationHeading{\textbf{Optical response of Au films for reproducible Si nano-structuring and its application for efficient micro-drop SERS with portable Raman system}}{Sep 2023}
+\vspace{-4pt}
+\resumeItem{Shweta Verma, \textbf{Venkat Suprabath Bitra}, R. Singh, B. Tirumala Rao}
+\vspace{-4pt}  
+\resumeItem{ Materials Chemistry and Physics, Volume 306, 2023, 128058, ISSN 0254-0584 \href{https://doi.org/10.1016/j.matchemphys.2023.128058}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-12pt}
+
+
+\publicationHeading{\textbf{Machine Learning and Convolutional Neural Network based Trace Identification of Pesticides and Dye Mixtures from Raman Spectra}}{Jan 2023}
+\vspace{-4pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}, Shweta Verma, B. Tirumala Rao}
+\vspace{-4pt}  
+\resumeItem{ $6^{th}$ Joint International Conference on Data Science \& Management of Data (CODS-COMAD 2023) \href{https://doi.org/10.1145/3570991.3571007}{\raisebox{-0.2\height}\faExternalLink}}
+
+
+\vspace{-12pt}
+
+%
+
+\publicationHeading{\textbf{Software for Comprehensive Batch Analysis of Raman/SERS Spectra with Real-time Interactive Visualization  and Machine Learning Predictions}}{Dec 2022}
+\vspace{-4pt}
+\resumeItem{\textbf{Venkat Suprabath Bitra}}
+\vspace{-4pt}  
+\resumeItem{ IX International Conference on Perspectives in Vibrational Spectroscopy (ICOPVS-2022) \href{https://drive.google.com/file/d/12ldAYec7JVinx3Xrtw3SRgc_I1RNyR9D/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}
+
+
+\vspace{-12pt}
+
+%
+
+\publicationHeading{\textbf{An Interactive Simulator for COVID-19 Trend Analysis}}{Jan 2021}
+\vspace{-12pt}
+\resumeItem{Jayati Deshmukh, Raksha Pavagada Subbanarasimha, Pooja Bassin, \textbf{Venkat Suprabath Bitra}, Srinath Srinivasa, and Anupama Sharma}
+\vspace{-4pt}  
+\resumeItem{$3^{th}$ Joint International Conference on Data Science \& Management of Data (CODS-COMAD 2021) \href{https://dl.acm.org/doi/10.1145/3430984.3430989}{\raisebox{-0.2\height}\faExternalLink}}
+
+\vspace{-12pt}
+
+\resumeItemListEnd
+
+\section{Mentorship}
+
+\resumeSubHeadingListStart
+\resumeSubheading{Classical Control Systems (EEME 3601)}{Columbia University, US}{Teaching Assistant II}{Sep 2025 -- Dec 2025}
+\resumeSubheading{Classical Control Systems (EEME 3601)}{Columbia University, US}{Teaching Assistant II}{Jan 2025 -- May 2025}
+\resumeSubheading{Linear Algebra (SM 102)}{IIIT Bangalore, India}{Teaching Assistant}{Jan 2024 -- May 2024}
+\resumeSubheading{Digital Design (ESS 102)}{IIIT Bangalore, India}{Teaching Assistant}{Aug 2023 -- Dec 2023}
+\resumeSubheading{Visual Recognition (AI 825)}{IIIT Bangalore, India}{Teaching Assistant}{Jan 2023 -- May 2023}
+\resumeSubheading{Introduction to Machine Learning (AI 511)}{IIIT Bangalore, India}{Teaching Assistant}{Aug 2022 -- Dec 2022}
+\resumeSubheading{Programming in C++ and Java (ESS 201)}{IIIT Bangalore, India}{Teaching Assistant}{Aug 2021 -- Dec 2021}
+\resumeSubHeadingListEnd
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\setstretch{1.2}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{{Languages}}{: Python, Java, C, C++, Verilog, Dart, JavaScript, TypeScript, R, SQL, HTML, CSS, MATLAB }\\
+     \textbf{{Technologies/Frameworks}}{: PyTorch, TensorFlow, Linux, Git, GitHub, Arduino, FPGA, Arduino Nano Sense, Raspberry Pi,  Svelte, Nengo, ReactJS, Redux, Android, NextJS, NodeJS, ExpressJS, D3.js, Jenkins, MongoDB, Flutter, Blockly} \\
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Relevant Coursework}
+    \setstretch{1.2}
+    \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{{\textbf{Artificial Intelligence and Machine Learning:}} Machine Learning,  Math for Machine Learning (MML), MML for Signal Recognition, Computer Vision, Natural Language Processing, Reinforcement Learning, Few-shot Learning, Causal Inference and Learning, Neuromorphic Computing
+    \newline
+    {\textbf{Computer Science:}} Topics in Computability and Learning, Data Visualization, Software Testing, Operating Systems, Programming Languages, Software Engineering, Introduction to Automata Theory and Computability, Database Systems, Object Oriented Programming, Design and Analysis of Algorithms, Data Structures and Algorithms, Programming}
+    {\textbf{Electronics and Communication:}} Signals and Systems, Computer Architecture, Digital Design, Embedded Systems, Control Systems, Computer Networks
+    \newline
+    {\textbf{Mathematics and Basic Sciences:}} Graph Theory, Probability, Statistics, Linear Algebra, Computational Genomics, Calculus, Real Analysis, Physics, Chemistry
+    \newline
+    {\textbf{Social Sciences:}} Software Product Management, Social Complexity and Systems Thinking, History of Ideas, Technical Communication, Economics, English
+    \newline}
+    \end{itemize}
+    \setstretch{1}
+    %\resumeSubHeadingListStart
+        \vspace{-18pt}
+    %\resumeSubHeadingListEnd
+
+ %-----------ACHIEVEMENTS---------------
+ \newpage
+\section{Achievements}
+\resumeItemListStart
+    \resumeItem{IAPR Best Student Paper Award at CVIP 2024 \href{https://cvip2024.iiitdm.ac.in/awards}{\raisebox{-0.2\height}\faExternalLink}}
+    \vspace{-5pt}
+    \resumeItem{Graduate Aptitude Test in Engineering (GATE) 2023; All India Rank: 271 GATE Score: 742 \href{https://drive.google.com/file/d/1tzVz76P2CQ7abaAhdvjZjokLpewjO8Wu/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}
+    \vspace{-5pt}
+    \resumeItem{Deans Merit List and Scholarship Winner in Academic Years 2019-24, IIITB}
+    % \href{https://drive.google.com/file/d/1YSGQ_HC_ychU32CsMEn-7TgCszDY-J9I/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}\href{https://drive.google.com/file/d/1TDmDmDbnYzyq7G5nta9PFCyiziXmRCEf/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}\href{https://drive.google.com/file/d/1NHEtyL9MLP6bgS4pIkY5bCFrTy7Sla_b/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}\href{https://drive.google.com/file/d/1NHEtyL9MLP6bgS4pIkY5bCFrTy7Sla_b/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}}
+    % \href{https://drive.google.com/file/d/1bHzKYkL893Z-uv49ynOd4o9YKAuWTPPY/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}
+    % \vspace{-5pt}
+    % \resumeItem{Deans Merit List Year 2020-21, IIITB \href{}{\raisebox{-0.2\height}\faExternalLink}}
+    % \vspace{-5pt}
+    % \resumeItem{Deans Merit List Year 2021-22, IIITB \href{}{\raisebox{-0.2\height}\faExternalLink}}
+    % \vspace{-5pt}
+    % \resumeItem{Deans Merit List Year 2022-23, IIITB \href{}{\raisebox{-0.2\height}\faExternalLink}}
+    % \vspace{-5pt}
+    % \resumeItem{Merit Based Scholarship 2020-21, IIITB}
+    % \vspace{-5pt}
+    % \resumeItem{Merit Based Scholarship 2021-22, IIITB}
+    \vspace{-5pt}
+    \resumeItem{Second Prize by Cartesi in ETHIndia 2022 Hackathon}
+    \vspace{-5pt}
+    \resumeItem{Second Prize in Team Hackathon Inclusive Stem Confluence 2020}
+\resumeItemListEnd
+ \vspace{-12pt}
+\section{Certifications}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{2}
+            \begin{itemize}[itemsep=-2pt, parsep=5pt]
+                \item\small Machine Learning Verzeo (2020) \href{https://drive.google.com/file/d/14UjyYz909mm0VzusHEavU-tFgHup6F0t/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}
+                \item NVIDIA DLI: Fundamentals of Deep Learning (2021) \href{https://drive.google.com/file/d/1zeKjxzR76iYmwS9dkHSk63teXYiZ7rNu/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}
+                \item NVIDIA DLI: Building Transformer-Based Natural  Language Processing Applications (2021) \href{https://drive.google.com/file/d/1xHU2gKfxvsWt91uc0PsrlpMoUMk3a4Qg/view?usp=sharing}{\raisebox{-0.2\height}\faExternalLink}
+                \item Crash Course on Python (by Google, Coursera) \href{https://www.coursera.org/account/accomplishments/certificate/R8G6RHT3QN29}{\raisebox{-0.2\height}\faExternalLink}
+                \item Mathematics for Machine Learning: Linear Algebra (by Imperial College London, Coursera) \href{https://www.coursera.org/account/accomplishments/certificate/APUAX7VRYQGZ}{\raisebox{-0.2\height}\faExternalLink}
+                \item Problem Solving (Basic) by HackerRank \href{https://www.hackerrank.com/certificates/1e1491d29802}{\raisebox{-0.2\height}\faExternalLink}
+                \item Java (Basic) by HackerRank \href{https://www.hackerrank.com/certificates/790db20ba82a}{\raisebox{-0.2\height}\faExternalLink}
+            \end{itemize}
+        \end{multicols}
+
+\end{document}

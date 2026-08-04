@@ -1,0 +1,22 @@
+---
+import SectionHeading from "../SectionHeading.astro";
+import coursework from "../../data/coursework.json";
+---
+
+<section id="coursework">
+  <SectionHeading title="Relevant Coursework" />
+  <div class="tag-groups">
+    {
+      coursework.map((group) => (
+        <div class="tag-group">
+          <h3>{group.category}</h3>
+          <div class="chip-group">
+            {group.courses.map((course) => (
+              <span class="chip">{course}</span>
+            ))}
+          </div>
+        </div>
+      ))
+    }
+  </div>
+</section>

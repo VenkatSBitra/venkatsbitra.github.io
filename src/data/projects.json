@@ -1,0 +1,162 @@
+[
+  {
+    "id": "fpga-linreg",
+    "title": "Linear Regression Accelerator for FPGA",
+    "subtitle": "Embedded Systems Course Project",
+    "stack": ["C", "Verilog", "Quartus"],
+    "startDate": "2025-01-01",
+    "endDate": "2025-05-01",
+    "bullets": [
+      "Designed a memory-mapped 4-bit linear regression accelerator on Intel FPGA with a pipelined datapath for high-throughput accumulation and closed-form inference",
+      "Achieved near-floating-point performance (R² = 0.949) using quantized integer arithmetic in hardware",
+      "Wrote a custom C-based Linux device driver and user-space interface to control the accelerator and stream training data via AXI-lite to ARM Cortex-A9"
+    ]
+  },
+  {
+    "id": "arccell",
+    "title": "ArcCell: RNA-seq Cell Type Annotation Tool",
+    "subtitle": "Computational Genomics Course Project",
+    "stack": ["Python"],
+    "startDate": "2025-01-01",
+    "endDate": "2025-05-01",
+    "bullets": [
+      "Developed a robust cell type annotation tool for sparse scRNA-seq data using ArcFace-based supervised embeddings",
+      "Implemented a preprocessing pipeline with GF-ICF weighting, over- and under-sampling to enhance rare cell type representation",
+      "Achieved 96% F1-score on test data and 94% on out-of-sample validation, outperforming CellTypist baseline (62%)",
+      "Integrated SHAP-based interpretability for gene attribution, finding biologically relevant marker genes across datasets"
+    ]
+  },
+  {
+    "id": "rag-chatbot",
+    "title": "RAG based LLM Chatbot",
+    "stack": ["Python", "LangChain", "Ollama"],
+    "startDate": "2024-11-01",
+    "endDate": "2024-12-01",
+    "bullets": [
+      "Developed a Retrieval-Augmented Generation (RAG) chatbot using LangChain and Ollama for enhanced context-aware responses",
+      "Implemented vector embedding and efficient document retrieval to improve answer relevance and accuracy",
+      "Integrated local LLM deployment with Ollama, reducing latency and ensuring data privacy"
+    ]
+  },
+  {
+    "id": "rl-chatbot",
+    "title": "Reinforcement Learning based Chatbot",
+    "stack": ["Python", "PyTorch", "TensorFlow"],
+    "startDate": "2023-01-01",
+    "endDate": "2023-05-01",
+    "bullets": [
+      "Design two chatbots (Agent A and Agent B) using policy gradient based training strategies so that they can handle prolonged meaningful natural conversations between them",
+      "Implement training techniques to give two separate personas for Agent A and Agent B."
+    ]
+  },
+  {
+    "id": "neuromorphic-abacus",
+    "title": "Abacus based Mental Calculation using Neuromorphic Architecture",
+    "stack": ["Python", "Nengo"],
+    "startDate": "2022-08-01",
+    "endDate": "2022-12-01",
+    "bullets": [
+      "Implementation of different abacus based arithmetic operations to mimic mental calculations using Neural Engineering Framework."
+    ]
+  },
+  {
+    "id": "oceanic-dataviz",
+    "title": "Oceanic Data Visualization",
+    "subtitle": "Data Visualization Course Project",
+    "stack": ["Python", "Svelte", "Flask", "D3.js"],
+    "startDate": "2022-08-01",
+    "endDate": "2022-08-01",
+    "bullets": [
+      "Designed a web application to visualize various features of Indian Ocean and Arabian Sea during the period of 29 Dec 2003 to 29 Dec 2005."
+    ]
+  },
+  {
+    "id": "2048-agent",
+    "title": "2048 Playing Agent",
+    "subtitle": "Personal Project",
+    "stack": ["Python", "PyTorch", "Jupyter"],
+    "startDate": "2022-06-01",
+    "endDate": "2022-06-01",
+    "bullets": [
+      "Designed a reinforcement learning agent to play 2048 using different algorithms DQN, PPO, NEAT and Markov Trees."
+    ]
+  },
+  {
+    "id": "visual-programming-lang",
+    "title": "Visual Programming Language",
+    "subtitle": "Programming Languages Course Project",
+    "stack": ["JavaScript", "Blockly"],
+    "startDate": "2022-01-01",
+    "endDate": "2022-01-01",
+    "bullets": [
+      "Web based visual programming language to emulate Turtle using Blockly transpiler for equivalent JS code generation."
+    ]
+  },
+  {
+    "id": "spectroscopic-tool",
+    "title": "Comprehensive Spectroscopic Data Processing and Visualization Tool",
+    "stack": ["Python", "React", "ECharts"],
+    "startDate": "2022-03-01",
+    "endDate": "2022-05-01",
+    "bullets": [
+      "Designed a full-stack novel software tool for comprehensive data analysis of batch Raman spectra with features like background correction, peaks analysis, heatmaps, SNV, PCA-SVM analysis, spectral data libraries etc.",
+      "Utilised React and Apache ECharts for designing frontend and data visualizations of the analysed data provided by backend built using Python and Flask.",
+      "Embedded various machine learning models using Python and scikit-learn for determination of compounds for applications like identifying pesticides."
+    ]
+  },
+  {
+    "id": "image-captioning",
+    "title": "Image Captioning Tool",
+    "subtitle": "Visual Recognition Course Project",
+    "stack": ["Python", "TensorFlow", "Jupyter"],
+    "startDate": "2022-05-01",
+    "endDate": "2022-05-01",
+    "bullets": [
+      "A CNN-LSTM network was implemented using InceptionNetv3 as feature extractor to label various images provided in the publically available Flickr8K dataset."
+    ]
+  },
+  {
+    "id": "auto-rickshaw-detection",
+    "title": "Auto Rickshaw Detection",
+    "subtitle": "Visual Recognition Course Project",
+    "stack": ["Python", "PyTorch", "Jupyter"],
+    "startDate": "2022-03-01",
+    "endDate": "2022-03-01",
+    "bullets": [
+      "Designed object detection model using YOLOv5 on self curated and labelled set of images of auto rickshaw."
+    ]
+  },
+  {
+    "id": "web-scraping-tool",
+    "title": "Web Scraping Tool",
+    "subtitle": "Personal Project",
+    "stack": ["Python", "Selenium", "SQLite"],
+    "startDate": "2022-01-01",
+    "endDate": "2022-01-01",
+    "bullets": [
+      "Program to scrape publication DOI and other details from different publisher websites based on user given keywords and record them in a database for ease of querying for researchers."
+    ]
+  },
+  {
+    "id": "nlp-sentiment-analysis",
+    "title": "NLP based Sentiment Analysis",
+    "subtitle": "Machine Learning Course Project",
+    "stack": ["Python", "Scikit-Learn", "Jupyter"],
+    "startDate": "2021-12-01",
+    "endDate": "2021-12-01",
+    "bullets": [
+      "Machine Learning model for multiclass classification of a sentence into six different types of sentimentally hurting classes; hosted as Community Kaggle Competition."
+    ]
+  },
+  {
+    "id": "face-recognition-security",
+    "title": "Face Recognition based Security System",
+    "subtitle": "Hackathon Project",
+    "stack": ["PyTorch", "Scikit-Learn", "OpenCV"],
+    "startDate": "2020-01-01",
+    "endDate": "2020-01-01",
+    "bullets": [
+      "Real time image pre-processing and face detection using OpenCV and Python integrated with pretrained Deep Learning model to determine strangers and owners."
+    ]
+  }
+]

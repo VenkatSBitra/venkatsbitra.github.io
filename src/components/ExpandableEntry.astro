@@ -1,0 +1,53 @@
+---
+import Icon from "./Icon.astro";
+
+interface Props {
+  title: string;
+  meta?: string;
+  dateRange: string;
+  bullets: string[];
+  link?: string;
+  chips?: string[];
+  defaultOpen?: boolean;
+}
+
+const { title, meta, dateRange, bullets, link, chips, defaultOpen = false } = Astro.props;
+---
+
+<details class="entry" open={defaultOpen}>
+  <summary>
+    <span class="entry-summary-main">
+      <span class="entry-title-row">
+        <Icon name="chevron-right" size={16} class="entry-chevron" />
+        <span>{title}</span>
+        {
+          link && (
+            <a
+              href={link}
+              target="_blank"
+              rel="noreferrer"
+              aria-label="External link"
+              onclick="event.stopPropagation()"
+            >
+              <Icon name="external-link" size={13} />
+            </a>
+          )
+        }
+      </span>
+      {meta && <span class="entry-meta">{meta}</span>}
+      {
+        chips && chips.length > 0 && (
+          <span class="entry-stack">
+            {chips.map((chip) => (
+              <span class="chip">{chip}</span>
+            ))}
+          </span>
+        )
+      }
+    </span>
+    <span class="entry-date">{dateRange}</span>
+  </summary>
+  <ul class="entry-bullets">
+    {bullets.map((bullet) => <li>{bullet}</li>)}
+  </ul>
+</details>

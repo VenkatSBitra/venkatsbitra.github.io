@@ -1,0 +1,41 @@
+{
+  "languages": [
+    "Python",
+    "Java",
+    "C",
+    "C++",
+    "Verilog",
+    "Dart",
+    "JavaScript",
+    "TypeScript",
+    "R",
+    "SQL",
+    "HTML",
+    "CSS",
+    "MATLAB"
+  ],
+  "frameworks": [
+    "PyTorch",
+    "TensorFlow",
+    "Linux",
+    "Git",
+    "GitHub",
+    "Arduino",
+    "FPGA",
+    "Arduino Nano Sense",
+    "Raspberry Pi",
+    "Svelte",
+    "Nengo",
+    "ReactJS",
+    "Redux",
+    "Android",
+    "NextJS",
+    "NodeJS",
+    "ExpressJS",
+    "D3.js",
+    "Jenkins",
+    "MongoDB",
+    "Flutter",
+    "Blockly"
+  ]
+}

@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import SectionHeading from "../SectionHeading.astro";
+import ExpandableEntry from "../ExpandableEntry.astro";
+import { formatDateRange, sortByStartDateDesc } from "../../lib/dates";
+
+const entries = sortByStartDateDesc((await getCollection("experience")).map((e) => e.data));
+---
+
+<section id="experience">
+  <SectionHeading title="Experience" />
+  <div class="entry-list">
+    {
+      entries.map((entry, i) => (
+        <ExpandableEntry
+          title={entry.organization}
+          meta={`${entry.role} · ${entry.location}`}
+          dateRange={formatDateRange(entry.startDate, entry.endDate)}
+          bullets={entry.bullets}
+          link={entry.link}
+          defaultOpen={i < 2}
+        />
+      ))
+    }
+  </div>
+</section>

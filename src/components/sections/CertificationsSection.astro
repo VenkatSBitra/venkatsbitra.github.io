@@ -1,0 +1,26 @@
+---
+import { getCollection } from "astro:content";
+import SectionHeading from "../SectionHeading.astro";
+import Icon from "../Icon.astro";
+
+const entries = await getCollection("certifications");
+---
+
+<section id="certifications">
+  <SectionHeading title="Certifications" />
+  <ul class="simple-list two-col">
+    {
+      entries.map(({ data }) => (
+        <li>
+          {data.title}
+          {data.year ? ` (${data.year})` : ""}
+          {data.link && (
+            <a href={data.link} target="_blank" rel="noreferrer" aria-label="External link">
+              <Icon name="external-link" size={13} />
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</section>

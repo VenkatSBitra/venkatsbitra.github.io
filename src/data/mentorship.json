@@ -1,0 +1,65 @@
+[
+  {
+    "id": "eeme3601-fall2025",
+    "course": "Classical Control Systems",
+    "courseCode": "EEME 3601",
+    "institution": "Columbia University, US",
+    "role": "Teaching Assistant II",
+    "startDate": "2025-09-01",
+    "endDate": "2025-12-01"
+  },
+  {
+    "id": "eeme3601-spring2025",
+    "course": "Classical Control Systems",
+    "courseCode": "EEME 3601",
+    "institution": "Columbia University, US",
+    "role": "Teaching Assistant II",
+    "startDate": "2025-01-01",
+    "endDate": "2025-05-01"
+  },
+  {
+    "id": "sm102-linear-algebra",
+    "course": "Linear Algebra",
+    "courseCode": "SM 102",
+    "institution": "IIIT Bangalore, India",
+    "role": "Teaching Assistant",
+    "startDate": "2024-01-01",
+    "endDate": "2024-05-01"
+  },
+  {
+    "id": "ess102-digital-design",
+    "course": "Digital Design",
+    "courseCode": "ESS 102",
+    "institution": "IIIT Bangalore, India",
+    "role": "Teaching Assistant",
+    "startDate": "2023-08-01",
+    "endDate": "2023-12-01"
+  },
+  {
+    "id": "ai825-visual-recognition",
+    "course": "Visual Recognition",
+    "courseCode": "AI 825",
+    "institution": "IIIT Bangalore, India",
+    "role": "Teaching Assistant",
+    "startDate": "2023-01-01",
+    "endDate": "2023-05-01"
+  },
+  {
+    "id": "ai511-intro-ml",
+    "course": "Introduction to Machine Learning",
+    "courseCode": "AI 511",
+    "institution": "IIIT Bangalore, India",
+    "role": "Teaching Assistant",
+    "startDate": "2022-08-01",
+    "endDate": "2022-12-01"
+  },
+  {
+    "id": "ess201-programming",
+    "course": "Programming in C++ and Java",
+    "courseCode": "ESS 201",
+    "institution": "IIIT Bangalore, India",
+    "role": "Teaching Assistant",
+    "startDate": "2021-08-01",
+    "endDate": "2021-12-01"
+  }
+]

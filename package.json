@@ -1,0 +1,19 @@
+{
+  "name": "personal-website",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "build:cv": "pdflatex -output-directory=CV -interaction=nonstopmode CV/main.tex && cp CV/main.pdf public/CV.pdf",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "astro": "^7.1.6"
+  }
+}

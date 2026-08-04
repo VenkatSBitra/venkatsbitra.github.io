@@ -1,0 +1,197 @@
+[
+  {
+    "id": "columbia-thesis",
+    "organization": "Columbia University",
+    "role": "Master's Thesis Project",
+    "location": "New York, NY",
+    "startDate": "2025-01-01",
+    "endDate": null,
+    "bullets": [
+      "Developed a novel Variational Autoencoder (VAE)-based Audio Encoder with a Mamba-enhanced Differentiable Digital Signal Processing (DDSP) Decoder for direct waveform analysis, enabling music synthesis and timbre transfer.",
+      "Explored minimal Recurrent Neural Networks (minLSTMs and minGRUs), which significantly improve sequence modeling performance and efficiency by leveraging fewer parameters.",
+      "Developed Bidirectional Minimal GRU (BiMinGRU) to effectively incorporate past and future context in the sequence model, removing the reliance on causal convolutions for multi-level architectural designs.",
+      "Implemented a self-supervised Expectation-Maximisation (EM) based learning approach to enhance fundamental frequency (F0) and voicing estimation, capitalizing on the co-dependent relationship between existence of fundamental frequency and voicing to filter unvoiced frames and preventing bad gradient updates.",
+      "Engineered a highly parameter-efficient frame-level F0 and voicing extraction model with only ≈75K parameters using Constant Q-Transform (CQT) features, prioritizing lightweight and efficient processing for deployment.",
+      "Demonstrated a novel fully end-to-end trainable DDSP-based music synthesis and timbre transfer system that accepts any reference monophonic audio, eliminating dependence on external F0 or loudness models allowing for highly specialized models for end-user use cases."
+    ]
+  },
+  {
+    "id": "cris-lab",
+    "organization": "Complex Resilient Intelligent Systems (CRIS) Lab, Columbia University",
+    "role": "Research Assistant",
+    "location": "New York, NY",
+    "startDate": "2024-09-01",
+    "endDate": null,
+    "bullets": [
+      "Investigated interpretability of LLMs (GPT-2, Gemma 2B Instruct) by analyzing hidden representations using dictionary learning and sparse autoencoders to uncover monosemantic features.",
+      "Implemented feature clamping approach (by Anthropic) to steer model outputs toward specific features, improving controllability and interpretability.",
+      "Applied Sparse Autoencoders (SAEs) and BERTopic to 500 books across 20 genres, extracting monosemantic features from dense embeddings at multiple granularities to map semantic structure in decoder-based LLMs.",
+      "Uncovered unexpected cross-genre semantic relationships through centroid analysis revealing emergent cross-genre relationships validated by narrative archetype theory.",
+      "Leading team to investigate emergent scientific understanding in LLMs by training domain-specific and shared-domain SAEs on physics, chemistry and biology textbooks, analyzing how models represent concepts (e.g., atomic structure) differently across disciplines while identifying shared fundamental features.",
+      "Developing dead neuron mitigation techniques and hierarchical architectures in SAEs to control learned feature granularity, reducing reconstruction loss while improving interpretability and sparsity."
+    ]
+  },
+  {
+    "id": "a2r-lab",
+    "organization": "Accessible and Accelerated Robotics (A²R) Lab, Columbia University",
+    "role": "Research Assistant",
+    "location": "New York, NY",
+    "startDate": "2024-09-01",
+    "endDate": "2025-05-01",
+    "bullets": [
+      "Optimized and implemented MobileNet and PyDNet depth estimation models onto resource-constrained microcontrollers (Crazyflie, ESP32) using a custom efficient framework, achieving real-time, on-device depth perception for autonomous systems.",
+      "Deployed YOLOv11 for high-speed, real-time object detection in low-power embedded systems, significantly enhancing autonomous target navigation and obstacle avoidance capabilities.",
+      "Developed a custom lightweight framework leveraging Teacher-Student Distillation to compress deep learning models into a low-parameter configuration, ensuring efficient resource utilization and reliable operation across diverse microcontroller hardware."
+    ]
+  },
+  {
+    "id": "dvmm-lab",
+    "organization": "Digital Video and Multimedia (DVMM) Lab, Columbia University",
+    "role": "Research Assistant",
+    "location": "New York, NY",
+    "startDate": "2024-09-01",
+    "endDate": "2025-02-01",
+    "bullets": [
+      "Developed and implemented a novel Vision Transformer approach for Causal Action Understanding, predicting both the action and its resulting object state changes by analyzing start/end frames and bounding box localizations.",
+      "Developed an advanced data curation pipeline integrating LLaMA 3.1 via few-shot prompting to resolve issues like object naming inconsistencies and improve action extraction accuracy from raw Ego4D and YouCook2 narrations.",
+      "Resolved a critical temporal misalignment in the Ego4D dataset by developing and implementing a binary search algorithm to efficiently map narrations to corresponding video clips, ensuring data coherence for action understanding.",
+      "Established performance benchmarks by training and evaluating multimodal baselines (Clip, BridgeFormer, Stateformer, ACTRON) on the enhanced dataset, comparing their capabilities in action prediction and state change localization."
+    ]
+  },
+  {
+    "id": "rrcat-2024",
+    "organization": "Laser Materials Processing Division, RRCAT",
+    "role": "Research Intern",
+    "location": "Indore, IN",
+    "startDate": "2024-07-01",
+    "endDate": "2024-08-01",
+    "bullets": [
+      "Adapted the YOLO object detection framework for generalized spectra classification, achieving mAP >0.992 for 90 spectra classes and eliminating the traditional need for extensive data preprocessing.",
+      "Introduced a novel SVG-based method for automated generation of diverse, annotated spectral image datasets with varied configurations and backgrounds, overcoming limitations of traditional data creation.",
+      "Evaluated the integration of attention mechanisms (CBAM and SE) into the YOLO architecture to further enhance feature extraction and improve classification performance in spectral image analysis.",
+      "Conducted perturbation analysis on the trained YOLO model to understand and validate how the network was classifying spectra, providing interpretability for the detection mechanism.",
+      "Successfully deployed trained YOLO models on smartphones for rapid, real-time spectra classification, benchmarking YOLOv8m and YOLOv8n performance and demonstrating superior efficiency over traditional 1D CNN approaches."
+    ]
+  },
+  {
+    "id": "iiitb-thesis",
+    "organization": "International Institute of Information Technology Bangalore",
+    "role": "Master's Thesis Project",
+    "location": "Bangalore, IN",
+    "startDate": "2024-01-01",
+    "endDate": "2024-06-01",
+    "bullets": [
+      "Designed and implemented a Panoptic Segmentation Guided Moving Object Segmentation (MOS) framework to correct false positives in the state-of-the-art (SOTA) RigidMask model, specifically enhancing performance for SLAM systems.",
+      "Localized the primary cause of SOTA model failure to anomalies (spikes) in 3D P+P cost maps for static objects near frame edges or under occlusion on the challenging VKITTI dataset.",
+      "Integrated a top-down information fusion pipeline combining panoptic segmentation (PanFPN), monocular depth estimation (Metric3D), and dense optical flow (RAFT) as a robust post-processing correction step.",
+      "Developed an IoU-based panoptic instance tracking algorithm and used dense optical flow matching to estimate per object motion in depth, achieving significantly higher reliability for objects in the 10m - 30m range compared to SIFT.",
+      "Engineered a final correction layer using 3D P+P cost histogram analysis to filter residual false positives caused by occlusions or close-range objects, cases where depth-based motion estimation fails.",
+      "Achieved substantial quantitative improvements across the VKITTI dataset, including increasing Background IoU to over 99% in tested scenes (e.g., from 87.67 to 99.41 in Scene 01).",
+      "Improved the system's robustness by introducing a Reliability Score metric to penalize false positives in frames with no moving objects, with scores reaching 100.0 in scenes where the baseline had high false positive rates."
+    ]
+  },
+  {
+    "id": "ubc-okanagan",
+    "organization": "Statistics and Machine Learning Laboratory, UBC Okanagan Campus",
+    "role": "Research Intern",
+    "location": "Kelowna, CA",
+    "startDate": "2023-08-01",
+    "endDate": "2023-12-01",
+    "link": "https://drive.google.com/file/d/1Rt6sj3cNurPYabwLlw6IlGi88XK0PWEo/view?usp=sharing",
+    "bullets": [
+      "Developed and implemented a Finite Gaussian Mixture Model (FGMM) with Linear Spatial Covariance structure to perform unsupervised classification of high-dimensional spatial data (MC-simulated radiation dose grids).",
+      "Engineered a highly efficient covariance parameterization with only four free parameters, making the model scalable regardless of the number of pixels (p).",
+      "Applied an Expectation-Maximization (EM) algorithm to classify biomedical MC simulation data (e.g., 10 mGy vs. 500 mGy dose levels) based on differences in spatial patterns (covariance) rather than global intensity, confirming that higher dose levels exhibit lower spatial variance.",
+      "Evaluated two decay functions (Quadratic and Sigmoid) for the spatial covariance component, finding that the Sigmoid decay better approximates complex spatial patterns (“many bumps” vs. “single bump”) relevant to cell/film radiation simulations."
+    ]
+  },
+  {
+    "id": "adobe-research",
+    "organization": "Adobe Research",
+    "role": "Research Intern",
+    "location": "Bangalore, IN",
+    "startDate": "2023-05-01",
+    "endDate": "2023-07-01",
+    "link": "https://drive.google.com/file/d/1CyZFnXeJqNbwFSd9rFtHVOSS2556KXTW/view?usp=sharing",
+    "bullets": [
+      "Engineered and optimized diffusion models with multimodal constraints (text and visual inputs) to gain granular control over image synthesis, accelerating and streamlining the product design creation workflow.",
+      "Produced visually cohesive, marketing-ready images by leveraging the constrained generative models, ensuring strict adherence to brand references and style guidelines to drive visual consistency across product assets.",
+      "Executed advanced multimodal image generation techniques to enhance control and quality, eliminating manual design iterations and significantly improving the efficiency of creating branded visual assets."
+    ]
+  },
+  {
+    "id": "mpl-iiitb",
+    "organization": "Multimodal Perception Lab, IIITB",
+    "role": "Research Intern",
+    "location": "Bangalore, IN",
+    "startDate": "2022-05-01",
+    "endDate": "2023-05-01",
+    "bullets": [
+      "Investigated and benchmarked state-of-the-art GAN-based models for audio-video generation and style transfer, focusing on applications like realistic lip synchronization (e.g., Wav2Lip) and semantic face editing (e.g., InterFaceGAN).",
+      "Implemented and optimized various published GAN architectures for face manipulation (e.g., InterFaceGAN, and models similar to Only a Matter of Style for age regression/transformation), and performed comprehensive testing and comparative analysis using custom datasets.",
+      "Combined traditional computer graphics techniques with deep learning by incorporating the FLAME 3D head model into GAN workflows, which improved how realistic and structurally consistent the face edits looked, especially when moving beyond flat 2D images.",
+      "Developed SemUV, a deep learning system that generates and edits 3D human heads by working directly with UV texture maps using StyleGANv2, bypassing the limitations of traditional 2D image manipulation approaches.",
+      "Demonstrated improved identity preservation and structural consistency compared to 2D methods through user study validation, successfully editing facial features (age, gender, facial hair) while maintaining realistic appearance across different 3D poses.",
+      "Built a flexible and efficient solution that works independently of 3D structure, lighting, and rendering settings, allowing quick integration into existing graphics pipelines for VR, AR, gaming, and visual effects applications."
+    ]
+  },
+  {
+    "id": "rrcat-2022-tinyml",
+    "organization": "Laser Materials Processing Division, RRCAT",
+    "role": "Research Intern",
+    "location": "Indore, IN",
+    "startDate": "2022-12-01",
+    "endDate": "2023-01-01",
+    "bullets": [
+      "Optimized and deployed an 8-bit quantized CNN onto resource-constrained TinyML hardware (Arduino Nano 33 BLE) to achieve accurate classification of 22 complex spectral classes.",
+      "Achieved >99.5% classification accuracy on the quantized model by demonstrating the critical role of data normalization, enabling high-precision spectral analysis for field-deployable analytical instrumentation.",
+      "Designed and implemented the complete spectral analysis pipeline on-device (preprocessing, ML classification, and analyte quantification) to ensure real-time, autonomous decision-making without external computational or cloud resources."
+    ]
+  },
+  {
+    "id": "rrcat-2021-sers",
+    "organization": "Laser Materials Processing Division, RRCAT",
+    "role": "Research Intern",
+    "location": "Indore, IN",
+    "startDate": "2021-12-01",
+    "endDate": "2022-01-01",
+    "link": "https://drive.google.com/file/d/17LdNpJl5PiLeAiSnUvo3jRqvBoKuyRCR/view?usp=sharing",
+    "bullets": [
+      "Developed an innovative, low-cost automated system (Arduino UNO & CNC shield) that enabled high-throughput spectral data acquisition (up to 250 spectra/hour), facilitating the generation of large, labeled datasets for ML training.",
+      "Implemented a novel raster scanning technique and vision-based automatic sample focus distance control to significantly improve SERS data reproducibility and leverage dynamic 3D hotspots, enabling detection down to a 5 nM limit.",
+      "Created an interactive Principal Component Analysis (PCA) GUI for accessible data exploration, allowing non-experts to dynamically evaluate the impact of normalization methods on spectral data clustering.",
+      "Developed a novel SERS approach integrating machine learning (PCA & LDA) to achieve >97% accuracy in identifying complex pesticide mixtures, addressing a gap in current analytical methods.",
+      "Conducted ML classification and performance evaluation (SVM, kNN, etc.) across diverse datasets, employing Recursive Feature Elimination (RFE) for optimal feature selection and robust classification using limited spectral ranges."
+    ]
+  },
+  {
+    "id": "gvcl-iiitb",
+    "organization": "Graphics Visualization Computing Lab, IIITB",
+    "role": "Research Intern",
+    "location": "Bangalore, IN",
+    "startDate": "2021-05-01",
+    "endDate": "2021-07-01",
+    "link": "https://drive.google.com/file/d/1oNTaE8Omw0AsDx3I-SSY7yNkdDnR_xYY/view?usp=sharing",
+    "bullets": [
+      "Developed and implemented two novel phenotype-specific filtering methods (network-based and correlation-based) to rank and select significant genes, effectively reducing the large gene space to an optimal size for exploratory visualization.",
+      "Constructed a diseasome (disease-gene network) as an unbalanced bipartite graph by integrating multi-omics data (DNA methylation and mRNA expression) for seven cancer phenotypes from TCGA (The Cancer Genome Atlas) using the Heterogeneous Correlation Network Model (HCNM).",
+      "Designed a systematic “filter-funnel-focus” workflow for gene prioritization to ensure clutter-free visualization and focused analysis of key genes (e.g., 100+ genes).",
+      "Conducted extensive downstream analysis, including pathway enrichment (WikiPathways, Reactome, and KEGG) and functional enrichment (DAVID), to validate biological relevance and compare the performance of the two filtering methods across cancer types.",
+      "Developed RadTrixVis, an interactive web-based visualization tool using RadTrix, a novel hybrid graph layout, to display complex disease-gene networks. The layout places a matrix at the center to dramatically reduce visual clutter and edge crossings when showing relationships between diseases and genes.",
+      "Integrated an intuitive GUI with interactive features (e.g., phenotype filtering, gene selection, color customization, node reordering) to facilitate disease-specific and gene-specific analysis."
+    ]
+  },
+  {
+    "id": "web-science-iiitb",
+    "organization": "Web Science Laboratory, IIITB",
+    "role": "Research Intern",
+    "location": "Bangalore, IN",
+    "startDate": "2020-04-01",
+    "endDate": "2020-06-01",
+    "bullets": [
+      "Engineered and deployed a full-stack, interactive COVID-19 trend simulator using React, Leaflet, and Recharts for frontend and a Python/Flask REST API backend to efficiently generate and visualize predictions.",
+      "Validated and refined the core SEIR epidemic model implementation, ensuring the correct integration of complex network diffusion and community interaction theory into the production code for accurate trend simulation.",
+      "Executed comprehensive testing and troubleshooting of the parameter system and prediction generation logic, guaranteeing reliable simulation results across 10+ user-controlled variables (e.g., mobility, school closures) for policy analysis."
+    ]
+  }
+]

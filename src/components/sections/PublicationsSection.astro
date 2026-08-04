@@ -1,0 +1,42 @@
+---
+import { getCollection } from "astro:content";
+import SectionHeading from "../SectionHeading.astro";
+import Icon from "../Icon.astro";
+import { formatMonthYear, sortByDateDesc } from "../../lib/dates";
+
+const entries = sortByDateDesc((await getCollection("publications")).map((e) => e.data));
+---
+
+<section id="publications">
+  <SectionHeading title="Publications" />
+  <div class="flat-list">
+    {
+      entries.map((pub) => (
+        <div class="flat-row">
+          <div class="flat-row-heading">
+            <span>
+              {pub.title}
+              {pub.link && (
+                <a href={pub.link} target="_blank" rel="noreferrer" aria-label="External link">
+                  <Icon name="external-link" size={13} />
+                </a>
+              )}
+            </span>
+            <span class="entry-date">{formatMonthYear(pub.date)}</span>
+          </div>
+          <div class="flat-row-sub">
+            {pub.authors.map((author, i) => (
+              <Fragment>
+                {author.isSelf ? <strong>{author.name}</strong> : author.name}
+                {i < pub.authors.length - 1 ? ", " : ""}
+              </Fragment>
+            ))}
+            {pub.authorsNote ? `, ${pub.authorsNote}` : ""}
+          </div>
+          <div class="flat-row-sub">{pub.venue}</div>
+          {pub.award && <span class="badge">{pub.award}</span>}
+        </div>
+      ))
+    }
+  </div>
+</section>

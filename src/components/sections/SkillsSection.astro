@@ -1,0 +1,22 @@
+---
+import SectionHeading from "../SectionHeading.astro";
+import skills from "../../data/skills.json";
+---
+
+<section id="skills">
+  <SectionHeading title="Skills" />
+  <div class="tag-groups">
+    <div class="tag-group">
+      <h3>Languages</h3>
+      <div class="chip-group">
+        {skills.languages.map((lang) => <span class="chip">{lang}</span>)}
+      </div>
+    </div>
+    <div class="tag-group">
+      <h3>Technologies / Frameworks</h3>
+      <div class="chip-group">
+        {skills.frameworks.map((fw) => <span class="chip">{fw}</span>)}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,18 @@
+[
+  {
+    "institution": "Columbia University, USA",
+    "location": "New York, NY",
+    "degree": "MS in Computer Science",
+    "gpa": "4.231",
+    "startDate": "2024-09-01",
+    "endDate": "2025-12-01"
+  },
+  {
+    "institution": "IIIT Bangalore, India",
+    "location": "Bangalore, India",
+    "degree": "Integrated M.Tech. (B.Tech. + M.Tech.) in Computer Science and Engineering",
+    "gpa": "3.85 / 4.00",
+    "startDate": "2019-08-01",
+    "endDate": "2024-07-01"
+  }
+]

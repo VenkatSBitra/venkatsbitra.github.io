@@ -1,0 +1,40 @@
+[
+  {
+    "id": "ml-verzeo",
+    "title": "Machine Learning Verzeo",
+    "year": "2020",
+    "link": "https://drive.google.com/file/d/14UjyYz909mm0VzusHEavU-tFgHup6F0t/view?usp=sharing"
+  },
+  {
+    "id": "nvidia-dli-fundamentals",
+    "title": "NVIDIA DLI: Fundamentals of Deep Learning",
+    "year": "2021",
+    "link": "https://drive.google.com/file/d/1zeKjxzR76iYmwS9dkHSk63teXYiZ7rNu/view?usp=sharing"
+  },
+  {
+    "id": "nvidia-dli-transformers",
+    "title": "NVIDIA DLI: Building Transformer-Based Natural Language Processing Applications",
+    "year": "2021",
+    "link": "https://drive.google.com/file/d/1xHU2gKfxvsWt91uc0PsrlpMoUMk3a4Qg/view?usp=sharing"
+  },
+  {
+    "id": "python-crash-course",
+    "title": "Crash Course on Python (by Google, Coursera)",
+    "link": "https://www.coursera.org/account/accomplishments/certificate/R8G6RHT3QN29"
+  },
+  {
+    "id": "mml-linear-algebra",
+    "title": "Mathematics for Machine Learning: Linear Algebra (by Imperial College London, Coursera)",
+    "link": "https://www.coursera.org/account/accomplishments/certificate/APUAX7VRYQGZ"
+  },
+  {
+    "id": "hackerrank-problem-solving",
+    "title": "Problem Solving (Basic) by HackerRank",
+    "link": "https://www.hackerrank.com/certificates/1e1491d29802"
+  },
+  {
+    "id": "hackerrank-java",
+    "title": "Java (Basic) by HackerRank",
+    "link": "https://www.hackerrank.com/certificates/790db20ba82a"
+  }
+]

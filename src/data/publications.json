@@ -1,0 +1,173 @@
+[
+  {
+    "id": "fund-freq-voicing-icpram",
+    "title": "Lightweight Self-Supervised Detection of Fundamental Frequency and Accurate Probability of Voicing in Monophonic Music",
+    "authors": [
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Homayoon Beigi" }
+    ],
+    "venue": "15th International Conference on Pattern Recognition Applications and Methods (ICPRAM 2026)",
+    "date": "2026-03-01",
+    "link": "https://www.arxiv.org/abs/2601.11768",
+    "status": "published"
+  },
+  {
+    "id": "spatial-covariance-gmm",
+    "title": "Spatial Covariance Constraints for Gaussian Mixture Models",
+    "authors": [
+      { "name": "Hanzhang Lu" },
+      { "name": "Keiran Malott" },
+      { "name": "Venkat Suprabath Bitra", "isSelf": true }
+    ],
+    "authorsNote": "et al. (full author list in paper)",
+    "venue": "Submitted to Bioinformatics",
+    "date": "2026-01-01",
+    "link": "https://www.arxiv.org/abs/2601.11768",
+    "status": "submitted"
+  },
+  {
+    "id": "yolo-spectra-aca",
+    "title": "YOLO-spectra: A generalized framework for rapid simultaneous detection and classification of Raman spectra in images with mobile devices for enhancing on-site applications",
+    "authors": [
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Shweta Verma" },
+      { "name": "B. Tirumala Rao" }
+    ],
+    "venue": "Analytica Chimica Acta, Volume 1383, 15 January 2026, 344914, ISSN 0003-2670",
+    "date": "2026-01-01",
+    "link": "https://doi.org/10.1016/j.aca.2025.344914",
+    "status": "published"
+  },
+  {
+    "id": "hit-ip-raman",
+    "title": "HiT-IP Raman: An innovative high-throughput spectra acquisition system with interactive PCA combined machine learning for instant classification of various analytes and mixtures",
+    "authors": [
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Shweta Verma" },
+      { "name": "B. Tirumala Rao" }
+    ],
+    "venue": "Microchemical Journal, Volume 219, December 2025, 116054, ISSN 0026-265X",
+    "date": "2025-11-01",
+    "link": "https://doi.org/10.1016/j.microc.2025.116054",
+    "status": "published"
+  },
+  {
+    "id": "diseasome-radtrix-ieee",
+    "title": "Network-based Diseasome Construction from Multi-omics Data and RadTrix Visualization",
+    "authors": [
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Reddy Rani Vangimalla" },
+      { "name": "Jaya Sreevalsan-Nair" }
+    ],
+    "venue": "IEEE Transactions on Computational Biology and Bioinformatics, vol. 22, no. 6, pp. 3550-3556, Nov-Dec 2025",
+    "date": "2025-11-01",
+    "link": "https://doi.org/10.1109/TCBBIO.2025.3599771",
+    "status": "published"
+  },
+  {
+    "id": "pesticide-sers-au-nanoparticles",
+    "title": "Machine learning driven trace detection of pesticide mixtures using citrate optimized Au nanoparticles based in-expensive efficient micro-drop SERS with portable spectrometer",
+    "authors": [
+      { "name": "Shweta Verma" },
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "B. Tirumala Rao" }
+    ],
+    "venue": "Spectrochimica Acta Part A: Molecular and Biomolecular Spectroscopy, Volume 340, 2025, 126333, ISSN 1386-1425",
+    "date": "2025-11-01",
+    "link": "https://doi.org/10.1016/j.saa.2025.126333",
+    "status": "published"
+  },
+  {
+    "id": "diffcraft-cai",
+    "title": "DiffCraft: A Modular Differentiable Framework for Music Synthesis with Timbre Transfer",
+    "authors": [
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Homayoon Beigi" }
+    ],
+    "venue": "IEEE Conference on Artificial Intelligence (CAI 2025)",
+    "date": "2025-05-01",
+    "link": "https://doi.org/10.1109/CAI64502.2025.00124",
+    "status": "published"
+  },
+  {
+    "id": "semuv-cvip",
+    "title": "SemUV: Deep Learning based semantic manipulation over UV texture map of virtual human heads",
+    "authors": [
+      { "name": "Anirban Mukherjee" },
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Vignesh Bondugula" },
+      { "name": "Tarun Reddy Tallapureddy" },
+      { "name": "Dinesh Babu Jayagopi" }
+    ],
+    "venue": "9th International Conference on Computer Vision & Image Processing (CVIP 2024)",
+    "date": "2024-12-01",
+    "link": "https://doi.org/10.48550/arXiv.2407.00229",
+    "award": "Won IAPR Best Student Paper Award",
+    "status": "published"
+  },
+  {
+    "id": "tinyml-raman-aca",
+    "title": "TinyML-Raman: A Novel IoT Based Field-Deployable Spectra Analysis for Accurate Identification of Pharmaceuticals and Trace Dye-Pesticide Mixtures from Facile SERS method",
+    "authors": [
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Shweta Verma" },
+      { "name": "B. Tirumala Rao" }
+    ],
+    "venue": "Analytica Chimica Acta, 2024, 343063, ISSN 0003-2670",
+    "date": "2024-08-01",
+    "link": "https://doi.org/10.1016/j.aca.2024.343063",
+    "status": "published"
+  },
+  {
+    "id": "au-films-sers-mcp",
+    "title": "Optical response of Au films for reproducible Si nano-structuring and its application for efficient micro-drop SERS with portable Raman system",
+    "authors": [
+      { "name": "Shweta Verma" },
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "R. Singh" },
+      { "name": "B. Tirumala Rao" }
+    ],
+    "venue": "Materials Chemistry and Physics, Volume 306, 2023, 128058, ISSN 0254-0584",
+    "date": "2023-09-01",
+    "link": "https://doi.org/10.1016/j.matchemphys.2023.128058",
+    "status": "published"
+  },
+  {
+    "id": "ml-cnn-pesticide-cods",
+    "title": "Machine Learning and Convolutional Neural Network based Trace Identification of Pesticides and Dye Mixtures from Raman Spectra",
+    "authors": [
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Shweta Verma" },
+      { "name": "B. Tirumala Rao" }
+    ],
+    "venue": "6th Joint International Conference on Data Science & Management of Data (CODS-COMAD 2023)",
+    "date": "2023-01-01",
+    "link": "https://doi.org/10.1145/3570991.3571007",
+    "status": "published"
+  },
+  {
+    "id": "raman-batch-software-icopvs",
+    "title": "Software for Comprehensive Batch Analysis of Raman/SERS Spectra with Real-time Interactive Visualization and Machine Learning Predictions",
+    "authors": [{ "name": "Venkat Suprabath Bitra", "isSelf": true }],
+    "venue": "IX International Conference on Perspectives in Vibrational Spectroscopy (ICOPVS-2022)",
+    "date": "2022-12-01",
+    "link": "https://drive.google.com/file/d/12ldAYec7JVinx3Xrtw3SRgc_I1RNyR9D/view?usp=sharing",
+    "status": "published"
+  },
+  {
+    "id": "covid-simulator-cods",
+    "title": "An Interactive Simulator for COVID-19 Trend Analysis",
+    "authors": [
+      { "name": "Jayati Deshmukh" },
+      { "name": "Raksha Pavagada Subbanarasimha" },
+      { "name": "Pooja Bassin" },
+      { "name": "Venkat Suprabath Bitra", "isSelf": true },
+      { "name": "Srinath Srinivasa" },
+      { "name": "Anupama Sharma" }
+    ],
+    "venue": "3rd Joint International Conference on Data Science & Management of Data (CODS-COMAD 2021)",
+    "date": "2021-01-01",
+    "link": "https://dl.acm.org/doi/10.1145/3430984.3430989",
+    "status": "published"
+  }
+]

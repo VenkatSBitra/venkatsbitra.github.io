@@ -1,0 +1,120 @@
+---
+import { Image } from "astro:assets";
+import photo from "../assets/profile/photo.jpg";
+import profile from "../data/profile.json";
+import Icon from "./Icon.astro";
+import ThemeToggle from "./ThemeToggle.astro";
+import SideNav from "./SideNav.astro";
+---
+
+<aside class="profile-card">
+  <Image src={photo} alt={profile.name} width={128} height={128} class="profile-photo" />
+  <h1>{profile.name}</h1>
+  <p class="tagline">{profile.tagline}</p>
+  <p class="location">{profile.location}</p>
+
+  <ul class="contact-list">
+    <li>
+      <a href={`mailto:${profile.email}`}>
+        <Icon name="mail" size={16} /><span>{profile.email}</span>
+      </a>
+    </li>
+    <li>
+      <a href={`tel:${profile.phone.replace(/[^+\d]/g, "")}`}>
+        <Icon name="phone" size={16} /><span>{profile.phone}</span>
+      </a>
+    </li>
+    <li>
+      <a href={profile.linkedin} target="_blank" rel="noreferrer">
+        <Icon name="linkedin" size={16} /><span>LinkedIn</span>
+      </a>
+    </li>
+    <li>
+      <a href={profile.github} target="_blank" rel="noreferrer">
+        <Icon name="github" size={16} /><span>GitHub</span>
+      </a>
+    </li>
+  </ul>
+
+  <a class="cv-button" href="/CV.pdf" target="_blank" rel="noreferrer">
+    <Icon name="download" size={16} /> Download CV
+  </a>
+
+  <div class="card-controls">
+    <ThemeToggle />
+  </div>
+
+  <SideNav />
+</aside>
+
+<style>
+  .profile-card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-4);
+    align-self: start;
+    position: sticky;
+    top: var(--space-5);
+  }
+  .profile-photo {
+    width: 128px;
+    height: 128px;
+    border-radius: 999px;
+    object-fit: cover;
+    border: 1px solid var(--color-border);
+  }
+  h1 {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .tagline {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+  }
+  .location {
+    color: var(--color-text-muted);
+    font-size: 0.85rem;
+  }
+  .contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+  .contact-list a {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    font-size: 0.88rem;
+    color: var(--color-text-muted);
+    text-decoration: none;
+  }
+  .contact-list a:hover {
+    color: var(--color-text);
+  }
+  .cv-button {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+    justify-content: center;
+    padding: var(--space-2) var(--space-4);
+    background: var(--color-accent);
+    color: white;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 0.9rem;
+    text-decoration: none;
+    width: fit-content;
+  }
+  .cv-button:hover {
+    opacity: 0.9;
+  }
+  .card-controls {
+    display: flex;
+  }
+
+  @media (max-width: 860px) {
+    .profile-card {
+      position: static;
+    }
+  }
+</style>
