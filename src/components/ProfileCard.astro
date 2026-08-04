@@ -4,7 +4,6 @@ import photo from "../assets/profile/photo.jpg";
 import profile from "../data/profile.json";
 import Icon from "./Icon.astro";
 import ThemeToggle from "./ThemeToggle.astro";
-import SideNav from "./SideNav.astro";
 ---
 
 <aside class="profile-card">
@@ -43,8 +42,6 @@ import SideNav from "./SideNav.astro";
   <div class="card-controls">
     <ThemeToggle />
   </div>
-
-  <SideNav />
 </aside>
 
 <style>
@@ -54,7 +51,7 @@ import SideNav from "./SideNav.astro";
     gap: var(--space-4);
     align-self: start;
     position: sticky;
-    top: var(--space-5);
+    top: calc(var(--nav-height) + var(--space-4));
   }
   .profile-photo {
     width: 128px;

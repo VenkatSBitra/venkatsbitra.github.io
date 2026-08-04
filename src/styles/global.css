@@ -27,6 +27,7 @@
   --radius-sm: 6px;
   --max-width: 1120px;
   --sidebar-width: 300px;
+  --nav-height: 3.5rem;
 
   color-scheme: light dark;
 }
@@ -66,7 +67,6 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: var(--space-5);
 }
 
 body {
@@ -129,6 +129,10 @@ button {
   min-width: 0;
 }
 
+.main-content > section {
+  scroll-margin-top: calc(var(--nav-height) + var(--space-4));
+}
+
 @media (max-width: 860px) {
   .layout {
     grid-template-columns: 1fr;
@@ -145,7 +149,6 @@ button {
   padding-bottom: var(--space-2);
   margin-bottom: var(--space-4);
   border-bottom: 2px solid var(--color-border);
-  scroll-margin-top: var(--space-5);
 }
 
 /* ---------- Expandable entries (Experience / Projects) ---------- */

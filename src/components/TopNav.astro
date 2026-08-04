@@ -12,41 +12,65 @@ const links = [
 ];
 ---
 
-<nav class="side-nav" aria-label="Section navigation">
-  <ul>
-    {
-      links.map((link) => (
-        <li>
-          <a href={link.href} data-nav-link={link.href.slice(1)}>
-            {link.label}
-          </a>
-        </li>
-      ))
-    }
-  </ul>
-</nav>
+<header class="top-nav">
+  <nav aria-label="Section navigation">
+    <ul>
+      {
+        links.map((link) => (
+          <li>
+            <a href={link.href} data-nav-link={link.href.slice(1)}>
+              {link.label}
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+  </nav>
+</header>
 
 <style>
-  .side-nav ul {
-    display: flex;
-    flex-direction: column;
-    gap: var(--space-1);
+  .top-nav {
+    position: sticky;
+    top: 0;
+    z-index: 20;
+    background: var(--color-bg);
+    border-bottom: 1px solid var(--color-border);
   }
-  .side-nav a {
-    display: block;
+  .top-nav nav {
+    max-width: var(--max-width);
+    margin-inline: auto;
+    padding-inline: var(--space-5);
+  }
+  .top-nav ul {
+    display: flex;
+    align-items: center;
+    gap: var(--space-1);
+    height: var(--nav-height);
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  .top-nav ul::-webkit-scrollbar {
+    display: none;
+  }
+  .top-nav a {
+    display: inline-flex;
+    align-items: center;
     padding: var(--space-2) var(--space-3);
     border-radius: var(--radius-sm);
-    font-size: 0.9rem;
+    font-size: 0.88rem;
     color: var(--color-text-muted);
     text-decoration: none;
+    white-space: nowrap;
+    transition:
+      color 0.15s ease,
+      background-color 0.15s ease;
   }
-  .side-nav a:hover {
+  .top-nav a:hover {
     color: var(--color-text);
     background: var(--color-surface);
   }
-  .side-nav a.active {
+  .top-nav a.active {
     color: var(--color-accent);
-    background: var(--color-surface);
     font-weight: 600;
   }
 </style>
